@@ -58,7 +58,7 @@ header {
 /* "Sign Up" Button Style */
 .btn-register {
     text-decoration: none;
-    color: #94A3B8; 
+    color: #94A3B8;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     transition: color 0.3s;
@@ -66,7 +66,7 @@ header {
 
 /* Hover effect for "Sign Up" Button */
 .btn-register:hover {
-    color: #6e00fa; 
+    color: #6e00fa;
 }
 
 /* "Login" Button Style */
@@ -88,21 +88,25 @@ header {
 }
 
 /* Main Section (Banner) */
-.banner-1 {
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     margin-top: 88px; /* Distance from the header */
-    padding-left: 80px; /* Distance of 119px from the left edge */
-    padding-right: 0; /* Remove any padding from the right */
+    padding: 0 80px; /* Padding on both sides */
+}
+
+.banner-1 {
+    flex: 1;
     display: flex;
     justify-content: flex-start; /* Align content to the left */
     align-items: center; /* Center vertically */
-    width: 100%; /* Ensure full width */
 }
 
 /* Banner White Section */
 .banner-white {
     background-color: #fff; /* White background for the banner */
     padding: 2rem; /* Padding inside the section */
-    width: 100%; /* Ensure full width */
 }
 
 /* Banner Heading */
@@ -142,7 +146,6 @@ header {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     text-decoration: none;
-    transition: background-color 0.3s;
 }
 
 /* Button 2 in the Banner */
@@ -153,25 +156,26 @@ header {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     text-decoration: none;
-    transition: background-color 0.3s, color 0.3s;
 }
 
 /* Clients Info Section */
 .clients-info {
-    display: flex;
-    align-items: flex-start; /* Align to the left */
+    display: flex; /* Changed to flexbox for horizontal alignment */
     gap: 1rem;
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     color: #94A3B8;
-    flex-direction: column; /* Align items vertically */
-    justify-content: center; /* Center image and text */
+    align-items: center; /* Vertically aligns the images */
+    justify-content: center; /* Ensures the images are centered */
+    flex-direction: row; /* Ensures the avatars are in a line */
 }
 
 /* Client Image Style */
 .clients-info img {
-    width: 120px;
-    border-radius: 50%;
+    width: 30px; /* Adjust the size of the avatars as needed */
+    height: 30px; /* Makes the images round */
+    border-radius: 50%; /* Makes the images round */
+    margin-left: 0px;
 }
 
 /* Client Text */
@@ -179,4 +183,259 @@ header {
     margin-top: 0.1rem; /* Space between avatar and text */
     font-size: 14px;
     color: #94A3B8;
+}
+
+/* Purple Section */
+.purple-section {
+    flex: none;
+    background-color: #6729FF;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;  /* Aligns content to the bottom */
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 100vh; /* Ensures the section takes the full height of the screen */
+    padding: 0; /* Removes padding to make the image touch */
+}
+
+/* Phone Container */
+.phone-container {
+    position: relative;
+    width: 100%;
+    height: 100%;  /* Ensures the container takes the full height */
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+}
+
+/* Phone Image */
+.phone-image {
+    max-width: 50%; /* Reduces the width of the image to 50% */
+    height: auto;
+    position: absolute;
+    bottom: 0;  /* Ensures the image is at the bottom */
+    left: 50%;
+    transform: translateX(-50%);  /* Centers the image horizontally */
+}
+
+/* Tooltip Styles */
+.tooltip {
+    position: absolute;
+    background-color: #ffffff;
+    color: #6729FF;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+}
+
+.tooltip::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    transform: translateY(-50%);
+    border-width: 6px;
+    border-style: solid;
+    border-color: transparent #ffffff transparent transparent;
+}
+
+/* Benefits Section */
+.benefits-section {
+    background-color: white;
+    padding: 4rem 2rem;
+    margin-top: 98px; /* Adds desired spacing between top and section */
+}
+
+/* Layout of the Benefits Section */
+.benefits-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+/* Information on the left */
+.benefits-info {
+    flex: 1;
+    text-align: left;
+    max-width: 40%;
+}
+
+/* Section Title */
+.benefits-info h2 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 32px;
+    color: #475569;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.highlighted-text {
+    color: #6729FF !important; /* Adding !important to ensure the purple color is applied */
+}
+
+.benefits-info h2 span {
+    color: inherit; /* Inherits the color of the title, keeping the original color */
+}
+
+.benefits-info h2 span:first-child {
+    display: block; /* Makes "Exclusive Benefits" go to the first line */
+}
+
+/* Section Description */
+.benefits-info p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #64748B;
+    margin-bottom: 2rem;
+}
+
+.benefits-grid {
+    flex: 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Forces two columns */
+    gap: 1.5rem;
+    max-width: 1000px; /* Limits the total width of the grid */
+}
+
+/* Benefit Cards */
+.benefit-card {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 280px; /* Limits the width of the cards */
+    margin: 0 auto; /* Centers the cards */
+}
+
+/* Card Title */
+.benefit-card h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #6729FF;
+    margin-bottom: 0.5rem;
+}
+
+/* Card Description */
+.benefit-card p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #64748B;
+}
+
+/* "See more" Button in each Card */
+.btn-more-info {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #6729FF;
+    color: #ffffff;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn-more-info:hover {
+    background-color: #5600c9;
+}
+
+/* "CARDS" Title above description */
+.purple-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #6729FF;
+    margin-bottom: 0.5rem; /* Space below the title */
+    text-transform: uppercase; /* Uppercase text */
+}
+
+/* "See more information" text link */
+.text-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Spacing between text and arrow */
+    color: #6729FF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer; /* Indicates it's clickable */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.text-link:hover {
+    color: #5600c9; /* Hover effect */
+}
+
+/* Arrow Icon */
+.arrow-icon {
+    width: 16px; /* Adjust size as needed */
+    height: auto;
+}
+
+/* Grid Adjustment */
+.benefits-grid .benefit-card:nth-child(1),
+.benefits-grid .benefit-card:nth-child(2) {
+    grid-column: span 1; /* Each one takes one column */
+}
+
+.benefits-grid .benefit-card:nth-child(3),
+.benefits-grid .benefit-card:nth-child(4) {
+    grid-column: span 1; /* Each one takes one column */
+}
+
+/* Card Header Style */
+.card-header {
+    display: flex; /* Uses flexbox to align icon and title */
+    align-items: center; /* Vertically aligns icon and text */
+    gap: 0.8rem; /* Space between icon and title */
+    margin-bottom: 1rem; /* Space below the header */
+}
+
+/* Icon in the cards */
+.card-icon {
+    width: 32px; /* Icon width */
+    height: 32px; /* Icon height */
+    flex-shrink: 0; /* Prevents the icon from shrinking */
+}
+
+.benefit-card .retangulos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px; /* Spacing between rectangles */
+    margin-top: 1rem; /* Space between text and rectangles */
+}
+
+/* Style for each rectangle */
+.benefit-card .retangulo {
+    width: 100px; /* Adjust size as needed */
+    height: auto; /* Maintains the image proportion */
+}
+
+/* Custom style for Digital Wallet card */
+.benefits-grid .wallet-card {
+    grid-column: span 2; /* Takes up two columns horizontally */
+    background-color: #F3F2FF; /* Specific background */
+    text-align: left; /* Aligns the text */
+}
+
+/* Adjustment to the card title */
+.benefits-grid .wallet-card h3 {
+    color: #6729FF; /* Title color */
+    font-size: 24px; /* Larger size for emphasis */
+    margin-bottom: 0.5rem;
+}
+
+/* Adjustment to the card text */
+.benefits-grid .wallet-card p {
+    color: #475569; /* Information color */
+    font-size: 16px;
+    line-height: 1.5;
 }
