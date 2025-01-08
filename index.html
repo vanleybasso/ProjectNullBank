@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags and external fonts -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NULLBANK</title>
@@ -9,41 +10,139 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <!-- Header creation -->
+    <!-- Header with navigation -->
     <header>
         <nav class="navigation">
             <div class="container">
+                <!-- Logo linking to the homepage -->
                 <a href="./index.html" class="logo">NullBank</a>
                 <ul class="navigation-links">
+                    <!-- Navigation links -->
                     <li><a href="index.html" class="start">Início</a></li>
                     <li><a href="404.html">Para você</a></li>
                     <li><a href="404.html">Serviços</a></li>
                     <li><a href="contato.html">Contato</a></li>
                 </ul>
                 <div class="buttons">
+                    <!-- Register and Login buttons -->
                     <a href="404.html" class="btn-register">Cadastrar-se</a>
                     <a href="404.html" class="btn-login">Fazer login</a>
                 </div>
             </div>
         </nav>
     </header>
+
+    <!-- Main content section -->
     <main>
-         <!-- Left side banner -->
-        <section class="banner-1">
-        <div class="banner-white">
-            <h1>Transformando <br> nulos em infinitas <br> possibilidades.</h1>
-            <p>Acreditamos que suas finanças podem ser tão simples <br> quanto você deseja. Conheça nossas soluções inovadoras.</p>
-            <div class="banner-buttons">
-                <a href="#" class="btn-1">Abra sua conta gratuita</a>
-                <a href="#" class="btn-2">Saiba mais</a>
+        <!-- Section with a banner and purple section side by side -->
+        <section class="main-content">
+            <!-- Left side banner with text and call to actions -->
+            <div class="banner-1">
+                <div class="banner-white">
+                    <h1>Transformando <br> nulos em infinitas <br> possibilidades.</h1>
+                    <p>Acreditamos que suas finanças podem ser tão simples <br> quanto você deseja. Conheça nossas soluções inovadoras.</p>
+                    <div class="banner-buttons">
+                        <!-- Call to action buttons -->
+                        <a href="#" class="btn-1">Abra sua conta gratuita</a>
+                        <a href="#" class="btn-2">Saiba mais</a>
+                    </div>
+                    <!-- Client testimonials section -->
+                    <div class="clients-info">
+                        <img src="./assets/avatar-1.png" alt="Avatar de cliente" class="client-avatar">
+                        <img src="./assets/avatar-2.png" alt="Avatar de cliente" class="client-avatar">
+                        <img src="./assets/avatar-3.png" alt="Avatar de cliente" class="client-avatar">
+                        <img src="./assets/avatar-4.png" alt="Avatar de cliente" class="client-avatar">
+                        <img src="./assets/avatar-5.png" alt="Avatar de cliente" class="client-avatar">
+                        <img src="./assets/user.png" alt="Avatar de cliente" class="client-avatar">
+                        <span>+7.8 milhões de clientes</span>
+                    </div>
+                </div>
             </div>
-            <div class="clients-info">
-                <img src="./assets/avatar.png" alt="Avatares de clientes">
-                <span>+7.8 milhões de clientes</span>
+
+            <!-- Purple section with a mobile phone image and tooltips -->
+            <div class="purple-section">
+                <div class="phone-container">
+                    <img src="./assets/mobile.png" alt="Imagem do celular" class="phone-image">
+                    <div class="tooltip" style="top: 10%; left: 80%;"> <!-- Tooltip indicating no high fees -->
+                        <span>Sem taxas absurdas</span>
+                    </div>
+                    <div class="tooltip" style="top: 40%; left: 70%;"> <!-- Tooltip indicating global payments -->
+                        <span>Pagamentos em todo o mundo</span>
+                    </div>
+                    <div class="tooltip" style="top: 70%; left: 90%;"> <!-- Tooltip indicating customer-centric design -->
+                        <span>100% pensado em você</span>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- Benefits section -->
+        <section class="benefits-section">
+            <div class="container">
+                <div class="benefits-layout">
+                    <!-- Left side with title and description of benefits -->
+                    <div class="benefits-info">
+                        <h3 class="purple-title">CARTÕES</h3>
+                        <h2><span class="normal-text">Benefícios exclusivos</span> do cartão <span class="highlighted-text">NullBank</span></h2>
+                        <p>Maximize seu poder de compra com os benefícios que você merece. Conquiste mais recompensas, descontos e praticidade no seu dia a dia.</p>
+                        <div class="text-link">
+                            <!-- Link to more information -->
+                            <span>Ver mais informações</span>
+                            <img src="./assets/arrow.png" alt="Ícone de seta" class="arrow-icon">
+                        </div>
+                    </div>
+
+                    <!-- Right side with benefit cards -->
+                    <div class="benefits-grid">
+                        <!-- Individual benefit cards -->
+                        <div class="benefit-card">
+                            <div class="card-header">
+                                <img src="./assets/gift.png" alt="Ícone de Recompensas" class="card-icon">
+                                <h3>Recompensas</h3>
+                            </div>
+                            <p>Acumule pontos em cada compra e troque por produtos, viagens, e muito mais.</p>
+                        </div>
+
+                        <div class="benefit-card">
+                            <div class="card-header">
+                                <img src="./assets/percent.png" alt="Ícone de Descontos" class="card-icon">
+                                <h3>Descontos</h3>
+                            </div>
+                            <p>Taxas de juros e tarifas reduzidas em compras selecionadas, oferecendo melhores condições.</p>
+                        </div>
+
+                        <div class="benefit-card">
+                            <div class="card-header">
+                                <img src="./assets/banknote.png" alt="Ícone de Cashback" class="card-icon">
+                                <h3>Cashback</h3>
+                            </div>
+                            <p>Receba uma porcentagem do valor gasto de volta em todas as compras.</p>
+                        </div>
+
+                        <div class="benefit-card">
+                            <div class="card-header">
+                                <img src="./assets/credit-card.png" alt="Ícone de Cartão Internacional" class="card-icon">
+                                <h3>Cartão Internacional</h3>
+                            </div>
+                            <p>Oferece segurança para compras no exterior, garantindo maior praticidade e controle.</p>
+                        </div>
+
+                        <!-- Additional benefit for digital wallets -->
+                        <div class="benefit-card wallet-card">
+                            <div class="card-header">
+                                <img src="./assets/wallet-minimal.png" alt="Ícone de Carteiras Digitais" class="card-icon">
+                                <h3>Carteiras Digitais</h3>
+                            </div>
+                            <p>Aceito em milhões de estabelecimentos e aplicativos. Mais praticidade em compras e viagens internacionais.</p>
+                            <div class="retangulos">
+                                <img src="./assets/ret-1.png" alt="Retângulo 1" class="retangulo">
+                                <img src="./assets/ret-2.png" alt="Retângulo 2" class="retangulo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    
 </body>
 </html>
