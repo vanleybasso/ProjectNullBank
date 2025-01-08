@@ -8,6 +8,7 @@ header {
     z-index: 1000;
 }
 
+/* Navigation Container */
 .navigation .container {
     display: flex;
     justify-content: space-between;
@@ -17,7 +18,7 @@ header {
     margin: 0 auto;
 }
 
-/* Logo */
+/* Logo Style */
 .logo {
     font-size: 24px;
     font-weight: bold;
@@ -41,6 +42,7 @@ header {
     transition: color 0.3s;
 }
 
+/* Hover effect for navigation links */
 .navigation-links a:hover,
 .navigation-links .start {
     color: #6e00fa;
@@ -62,6 +64,7 @@ header {
     transition: color 0.3s;
 }
 
+/* Hover effect for "Sign Up" Button */
 .btn-register:hover {
     color: #6e00fa; 
 }
@@ -72,13 +75,108 @@ header {
     background-color: #6729FF;
     color: #ffffff;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     transition: background-color 0.3s;
 }
 
+/* Hover effect for "Login" Button */
 .btn-login:hover {
     background-color: #5600c9;
+}
+
+/* Main Section (Banner) */
+.banner-1 {
+    margin-top: 88px; /* Distance from the header */
+    padding-left: 80px; /* Distance of 119px from the left edge */
+    padding-right: 0; /* Remove any padding from the right */
+    display: flex;
+    justify-content: flex-start; /* Align content to the left */
+    align-items: center; /* Center vertically */
+    width: 100%; /* Ensure full width */
+}
+
+/* Banner White Section */
+.banner-white {
+    background-color: #fff; /* White background for the banner */
+    padding: 2rem; /* Padding inside the section */
+    width: 100%; /* Ensure full width */
+}
+
+/* Banner Heading */
+.banner-1 h1 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.2;
+    color: #475569;
+    margin-bottom: 1rem;
+}
+
+/* Banner Paragraph */
+.banner-1 p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #64748B;
+    margin-bottom: 2rem;
+    max-width: 100%;
+    word-wrap: break-word; /* Forces word break */
+    white-space: normal; /* Allows correct text break */
+}
+
+/* Buttons in the Banner Section */
+.banner-buttons {
+    display: flex;
+    gap: 20px; /* Adjusted to 20px */
+    margin-bottom: 2rem;
+}
+
+/* Button 1 in the Banner */
+.banner-buttons .btn-1 {
+    padding: 0.75rem 1.5rem;
+    background-color: #EEE5FF;
+    color: #6729FF;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+/* Button 2 in the Banner */
+.banner-buttons .btn-2 {
+    padding: 0.75rem 1.5rem;
+    color: #64748B;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Clients Info Section */
+.clients-info {
+    display: flex;
+    align-items: flex-start; /* Align to the left */
+    gap: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #94A3B8;
+    flex-direction: column; /* Align items vertically */
+    justify-content: center; /* Center image and text */
+}
+
+/* Client Image Style */
+.clients-info img {
+    width: 120px;
+    border-radius: 50%;
+}
+
+/* Client Text */
+.clients-info span {
+    margin-top: 0.1rem; /* Space between avatar and text */
+    font-size: 14px;
+    color: #94A3B8;
 }
