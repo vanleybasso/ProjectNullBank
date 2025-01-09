@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTATO</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cabeçalho com navegação -->
+    <header>
+        <nav class="navigation">
+            <div class="container">
+                <!-- Logo com link para a página inicial -->
+                <a href="./index.html" class="logo">NullBank</a>
+                <ul class="navigation-links">
+                    <!-- Links de navegação -->
+                    <li><a href="index.html" class="start">Início</a></li>
+                    <li><a href="404.html">Para você</a></li>
+                    <li><a href="404.html">Serviços</a></li>
+                    <li><a href="contato.html" class="active">Contato</a></li>
+                </ul>
+                <div class="buttons">
+                    <!-- Botões de Cadastro e Login -->
+                    <a href="404.html" class="btn-register">Cadastrar-se</a>
+                    <a href="404.html" class="btn-login">Fazer login</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <section class="contact-section">
+        <div class="container">
+            <h1>Conecte-se conosco e<br>transforme ideias em realidade.</h1>
+            <p>Estamos aqui para ouvir você. Entre em contato<br>conosco e descubra novas possibilidades.</p>
+        </div>
+    </section>
+
+    <!-- Seção de Contato: Telefone, Redes Sociais e Fale Conosco -->
+    <section class="contact-details">
+        <div class="container">
+            <div class="contact-item">
+                <div class="contact-content">
+                    <!-- Ícone de telefone -->
+                    <img src="./assets/phone.png" alt="Ícone de Telefone" class="contact-icon">
+                    <div>
+                        <h2>Telefone</h2>
+                        <p class="phone-description">Precisa falar com a gente? Ligue para os nossos números:</p>
+                    </div>
+                </div>
+                <!-- Informações de telefone à direita -->
+                <div class="contact-info">
+                    <p><strong>9999 8888</strong> (capitais e regiões metropolitanas)</p>
+                    <p><strong>0800 543 2110</strong> (demais localidades)</p>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-content">
+                    <!-- Ícone de redes sociais -->
+                    <img src="./assets/redes.png" alt="Ícone de Redes Sociais" class="contact-icon">
+                    <div>
+                        <h2>Redes Sociais</h2>
+                        <p>Conecte-se em nossas redes sociais e acompanhe as novidades:</p>
+                    </div>
+                </div>
+                <!-- Ícones das redes sociais à direita -->
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank">
+                        <img src="./assets/facebook.png" alt="Facebook" class="social-icon">
+                    </a>
+                    <a href="https://twitter.com" target="_blank">
+                        <img src="./assets/twitter.png" alt="Twitter" class="social-icon">
+                    </a>
+                    <a href="https://linkedin.com" target="_blank">
+                        <img src="./assets/linkedin.png" alt="LinkedIn" class="social-icon">
+                    </a>
+                    <a href="https://instagram.com" target="_blank">
+                        <img src="./assets/instagram.png" alt="Instagram" class="social-icon">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Fale Conosco e Formulário -->
+            <div class="contact-item">
+                <div class="contact-content">
+                    <!-- Ícone de Fale Conosco -->
+                    <img src="./assets/message-circle.png" alt="Ícone de Fale Conosco" class="contact-icon">
+                    <div>
+                        <h2>Fale conosco</h2>
+                        <p>Prefere enviar uma mensagem?<br>Preencha o formulário abaixo e<br>retornaremos o mais rápido possível.</p>
+                    </div>
+                </div>
+
+                <!-- Formulário -->
+                <div class="contact-form">
+                    <form action="#" method="post">
+                        <div class="form-row form-row-inline">
+                            <div class="inline-field">
+                                <label for="first-name">Nome</label>
+                                <input type="text" id="first-name" name="first-name" placeholder="Seu nome" required>
+                            </div>
+                            <div class="inline-field">
+                                <label for="last-name">Sobrenome</label>
+                                <input type="text" id="last-name" name="last-name" placeholder="Seu sobrenome" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" name="message" placeholder="Sua mensagem" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">
+                            Enviar <img src="./assets/arrow2.png" alt="Seta" class="arrow-icon">
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

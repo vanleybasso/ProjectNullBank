@@ -43,9 +43,22 @@ header {
 }
 
 /* Efeito de Hover para os Links de Navegação */
-.navigation-links a:hover,
+.navigation-links a:hover {
+    color: #6729FF; /* Cor roxa ao passar o mouse */
+}
+
+/* Estilo específico para o link "Início" */
 .navigation-links .start {
-    color: #6e00fa; /* Cor roxa ao passar o mouse */
+    color: #94A3B8; /* Cor não ativa inicialmente */
+}
+
+.navigation-links .start.active {
+    color: #6729FF; /* Cor roxa quando ativo */
+}
+
+/* Estilo da classe .active */
+.navigation-links a.active {
+    color: #6729FF; /* Cor roxa ao estar ativo */
 }
 
 /* Estilos dos Botões de Autenticação */
@@ -86,6 +99,12 @@ header {
 .btn-login:hover {
     background-color: #5600c9; /* Cor de fundo roxa mais escura ao passar o mouse */
 }
+
+.navigation-links a.active {
+    color: #6729FF; /* Cor roxa */
+}
+
+
 
 /* Estilos da Seção Principal (Banner) */
 .main-content {
@@ -921,4 +940,234 @@ footer {
     color: #6729FF;
     font-size: 24px;
     margin: 10px 0;
+}
+
+
+.contact-section {
+    background-color: #6729FF; /* Cor de fundo roxa */
+    color: #ffffff; /* Cor do texto: Branco */
+    padding: 5rem 2rem; /* Aumenta o espaço interno vertical (cima e baixo) */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.contact-section .container {
+    max-width: 1200px; /* Limita a largura máxima */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding-left: 112px; /* Espaçamento à esquerda */
+    padding-top: 2rem; /* Adiciona espaço acima do conteúdo */
+}
+
+.contact-section h1,
+.contact-section p {
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.contact-section h1 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 50px; /* Tamanho da fonte */
+    font-weight: bold; /* Peso da fonte */
+    margin-bottom: 1rem; /* Espaçamento inferior */
+}
+
+.contact-section p {
+    font-family: 'Poppins', sans-serif; /* Fonte: 'Poppins', sans-serif */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: normal; /* Peso normal */
+    margin: 0; /* Remove espaçamento padrão */
+    color: white; /* Cor do texto padrão */
+}
+
+/* Cor específica para a descrição inicial */
+.contact-details p {
+    color: #ffffff; /* Cor branca para o texto "Estamos aqui para ouvir você..." */
+}
+
+/* Estilo básico para as seções de contato */
+.contact-details {
+    padding: 40px 0;
+}
+
+.contact-item h2 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: left;
+    margin-bottom: 4px; /* Reduz o espaçamento inferior do título */
+    color: #475569;
+}
+
+.contact-item p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: left;
+    margin-top: 0; /* Remove o espaçamento superior do parágrafo */
+    color: #64748B;
+}
+
+/* Flexbox para organizar os itens de contato */
+.contact-item {
+    display: flex; /* Utiliza flexbox */
+    justify-content: space-between; /* Espaça os elementos */
+    align-items: center; /* Alinha verticalmente os itens */
+    margin-bottom: 64px;
+}
+
+.contact-content {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex: 1; /* Flexibilidade para o conteúdo ocupar o espaço disponível */
+}
+
+.contact-info {
+    flex: 1;
+    text-align: right; /* Alinha o texto à direita */
+    padding-left: 400px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 16px;
+    margin-top: 12px;
+    justify-content: flex-end; /* Alinha os ícones das redes sociais à direita */
+    padding-right: 100px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Estilo básico para o layout do container */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.contact-icon {
+    width: 20px; /* Largura do ícone */
+    height: 20px; /* Altura do ícone */
+    transform: translateY(-2px); /* Move o ícone levemente para cima */
+}
+
+
+.phone-description {
+    white-space: nowrap; /* Impede quebra de linha */
+}
+
+.contact-form {
+    flex: 1; /* Permite que o formulário ocupe o espaço disponível */
+    padding-left: 40px; /* Espaçamento à esquerda */
+    padding-top: 20px;
+    max-width: 500px; /* Limita a largura máxima do formulário */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinha o conteúdo do formulário no início */
+}
+
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    margin-bottom: 20px; /* Espaçamento entre os campos do formulário */
+}
+
+.form-row-inline {
+    display: flex; /* Usado para exibir os campos na mesma linha */
+    justify-content: space-between; /* Distribui os campos igualmente */
+}
+
+.inline-field {
+    flex: 1; /* Cada campo ocupa uma quantidade igual de espaço */
+    margin-right: 10px; /* Espaçamento entre os campos */
+}
+
+.form-row label {
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #475569;
+}
+
+.form-row input, .form-row textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    border: 1px solid #D1D5DB;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.form-row input:focus, .form-row textarea:focus {
+    border-color: #6729FF; /* Cor de borda quando focado */
+}
+
+textarea {
+    height: 150px; /* Define a altura da caixa de mensagem */
+    resize: vertical; /* Permite redimensionamento vertical */
+}
+
+.btn-submit {
+    width: 215px; /* Define a largura do botão */
+    height: 40px; /* Define a altura do botão */
+    background-color: #6729FF;
+    color: #ffffff;
+    padding: 0; /* Remove o preenchimento para controlar o tamanho com largura e altura */
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px; /* Espaçamento entre o texto e a seta */
+    transition: background-color 0.3s;
+    margin-left: auto; /* Alinha o botão à direita */
+}
+
+.arrow-icon {
+    width: 18px; /* Ajusta a largura da seta */
+    height: 18px; /* Ajusta a altura da seta */
+}
+
+.btn-submit:hover {
+    background-color: #4f20c3;
+}
+
+
+.form-row-inline {
+    display: flex; /* Usado para exibir os campos na mesma linha */
+    justify-content: space-between; /* Distribui os campos igualmente */
+}
+
+.inline-field {
+    flex: 1; /* Cada campo ocupa uma quantidade igual de espaço */
+    margin-right: 40px; /* Espaçamento entre os campos */
+}
+
+
+.inline-field:last-child {
+    margin-right: 0;
+}
+
+textarea {
+    height: 200px; /* Define a altura da caixa de mensagem */
+    resize: vertical; /* Permite redimensionamento vertical */
+    
 }
