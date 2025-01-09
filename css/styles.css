@@ -1,441 +1,588 @@
-/* Header Style */
+/* Estilos do Header */
 header {
-    background-color: #ffffff;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
+    background-color: #ffffff; /* Cor de fundo: Branco */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Sombras suaves para o cabeçalho */
+    position: fixed; /* Fixa o cabeçalho no topo */
+    width: 100%; /* Largura: 100% da tela */
+    top: 0; /* Fixa no topo da página */
+    z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
 }
 
-/* Navigation Container */
+/* Estilos do Container de Navegação */
 .navigation .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
+    display: flex; /* Exibição flexível */
+    justify-content: space-between; /* Distribui os itens entre si */
+    align-items: center; /* Centraliza os itens verticalmente */
+    padding: 0.5rem 2rem; /* Espaçamento: 0.5rem em cima e embaixo, 2rem nas laterais */
+    max-width: 1200px; /* Limita a largura máxima */
+    margin: 0 auto; /* Centraliza horizontalmente */
 }
 
-/* Logo Style */
+/* Estilos do Logo */
 .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #6729FF;
-    text-decoration: none;
-    font-family: 'Outfit', sans-serif;
+    font-size: 24px; /* Tamanho da fonte: 24px */
+    font-weight: bold; /* Peso da fonte: Negrito */
+    color: #6729FF; /* Cor: Roxo */
+    text-decoration: none; /* Remove sublinhado */
+    font-family: 'Outfit', sans-serif; /* Fonte: 'Outfit', sans-serif */
 }
 
-/* Navigation Links */
+/* Estilos dos Links de Navegação */
 .navigation-links {
-    list-style: none;
-    display: flex;
-    gap: 2rem;
+    list-style: none; /* Remove os marcadores de lista */
+    display: flex; /* Exibição flexível */
+    gap: 2rem; /* Espaçamento de 2rem entre os itens */
 }
 
 .navigation-links a {
-    text-decoration: none;
-    color: #94A3B8;
-    font-size: 16px;
-    font-family: 'Poppins', sans-serif;
-    transition: color 0.3s;
+    text-decoration: none; /* Remove sublinhado */
+    color: #94A3B8; /* Cor: Cinza claro */
+    font-size: 16px; /* Tamanho da fonte: 16px */
+    font-family: 'Poppins', sans-serif; /* Fonte: 'Poppins', sans-serif */
+    transition: color 0.3s; /* Transição suave para a cor */
 }
 
-/* Hover effect for navigation links */
+/* Efeito de Hover para os Links de Navegação */
 .navigation-links a:hover,
 .navigation-links .start {
-    color: #6e00fa;
+    color: #6e00fa; /* Cor roxa ao passar o mouse */
 }
 
-/* Authentication Buttons */
+/* Estilos dos Botões de Autenticação */
 .buttons {
-    display: flex;
-    gap: 3rem; /* Space between the buttons */
-    align-items: center;
+    display: flex; /* Exibição flexível */
+    gap: 3rem; /* Espaçamento de 3rem entre os botões */
+    align-items: center; /* Alinha os itens verticalmente */
 }
 
-/* "Sign Up" Button Style */
+/* Estilo do Botão "Sign Up" */
 .btn-register {
-    text-decoration: none;
-    color: #94A3B8;
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    transition: color 0.3s;
+    text-decoration: none; /* Remove sublinhado */
+    color: #94A3B8; /* Cor: Cinza claro */
+    font-family: 'Poppins', sans-serif; /* Fonte: 'Poppins', sans-serif */
+    font-size: 16px; /* Tamanho da fonte: 16px */
+    transition: color 0.3s; /* Transição suave para a cor */
 }
 
-/* Hover effect for "Sign Up" Button */
+/* Efeito de Hover para o Botão "Sign Up" */
 .btn-register:hover {
-    color: #6e00fa;
+    color: #6e00fa; /* Cor roxa ao passar o mouse */
 }
 
-/* "Login" Button Style */
+/* Estilo do Botão "Login" */
 .btn-login {
-    padding: 0.5rem 1rem;
-    background-color: #6729FF;
-    color: #ffffff;
-    border: none;
-    border-radius: 8px;
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    transition: background-color 0.3s;
+    padding: 0.5rem 1rem; /* Espaçamento interno */
+    background-color: #6729FF; /* Cor de fundo: Roxo */
+    color: #ffffff; /* Cor do texto: Branco */
+    border: none; /* Sem borda */
+    border-radius: 8px; /* Bordas arredondadas */
+    text-decoration: none; /* Remove sublinhado */
+    font-family: 'Poppins', sans-serif; /* Fonte: 'Poppins', sans-serif */
+    font-weight: bold; /* Peso da fonte: Negrito */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
 }
 
-/* Hover effect for "Login" Button */
+/* Efeito de Hover para o Botão "Login" */
 .btn-login:hover {
-    background-color: #5600c9;
+    background-color: #5600c9; /* Cor de fundo roxa mais escura ao passar o mouse */
 }
 
-/* Main Section (Banner) */
+/* Estilos da Seção Principal (Banner) */
 .main-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-top: 88px; /* Distance from the header */
-    padding: 0 80px; /* Padding on both sides */
+    display: flex; /* Exibição flexível */
+    justify-content: space-between; /* Espaçamento entre os itens */
+    align-items: flex-start; /* Alinha ao topo */
+    margin-top: 88px; /* Distância do cabeçalho */
+    padding: 0 80px; /* Espaçamento nas laterais */
 }
 
 .banner-1 {
-    flex: 1;
-    display: flex;
-    justify-content: flex-start; /* Align content to the left */
-    align-items: center; /* Center vertically */
+    flex: 1; /* Ocupa o restante do espaço */
+    display: flex; /* Exibição flexível */
+    justify-content: flex-start; /* Alinha o conteúdo à esquerda */
+    align-items: center; /* Centraliza verticalmente */
 }
 
-/* Banner White Section */
+/* Seção branca do Banner */
 .banner-white {
-    background-color: #fff; /* White background for the banner */
-    padding: 2rem; /* Padding inside the section */
+    background-color: #fff; /* Cor de fundo branca */
+    padding: 2rem; /* Espaçamento interno */
 }
 
-/* Banner Heading */
+/* Título do Banner */
 .banner-1 h1 {
-    font-family: 'Outfit', sans-serif;
-    font-weight: 600;
-    font-size: 48px;
-    line-height: 1.2;
-    color: #475569;
-    margin-bottom: 1rem;
+    font-family: 'Outfit', sans-serif; /* Fonte: 'Outfit', sans-serif */
+    font-weight: 600; /* Peso da fonte: 600 */
+    font-size: 48px; /* Tamanho da fonte: 48px */
+    line-height: 1.2; /* Altura da linha */
+    color: #475569; /* Cor do texto */
+    margin-bottom: 1rem; /* Espaçamento abaixo */
 }
 
-/* Banner Paragraph */
+/* Parágrafo do Banner */
 .banner-1 p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    color: #64748B;
-    margin-bottom: 2rem;
-    max-width: 100%;
-    word-wrap: break-word; /* Forces word break */
-    white-space: normal; /* Allows correct text break */
+    font-family: 'Poppins', sans-serif; /* Fonte: 'Poppins', sans-serif */
+    font-size: 16px; /* Tamanho da fonte: 16px */
+    color: #64748B; /* Cor do texto */
+    margin-bottom: 2rem; /* Espaçamento abaixo */
+    max-width: 100%; /* Garante que o texto ocupe toda a largura */
+    word-wrap: break-word; /* Quebra de linha automática */
+    white-space: normal; /* Permite quebra de linha */
 }
 
-/* Buttons in the Banner Section */
+/* Botões na Seção do Banner */
 .banner-buttons {
-    display: flex;
-    gap: 20px; /* Adjusted to 20px */
-    margin-bottom: 2rem;
+    display: flex; /* Exibição flexível */
+    gap: 20px; /* Espaçamento de 20px entre os botões */
+    margin-bottom: 2rem; /* Espaçamento abaixo */
 }
 
-/* Button 1 in the Banner */
+/* Botão 1 no Banner */
 .banner-buttons .btn-1 {
-    padding: 0.75rem 1.5rem;
-    background-color: #EEE5FF;
-    color: #6729FF;
-    border-radius: 8px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    text-decoration: none;
+    padding: 0.75rem 1.5rem; /* Espaçamento interno */
+    background-color: #EEE5FF; /* Cor de fundo */
+    color: #6729FF; /* Cor do texto */
+    border-radius: 8px; /* Bordas arredondadas */
+    font-family: 'Poppins', sans-serif; /* Fonte: 'Poppins', sans-serif */
+    font-weight: bold; /* Peso da fonte: Negrito */
+    text-decoration: none; /* Remove sublinhado */
 }
 
-/* Button 2 in the Banner */
+/* Botão 2 no Banner */
 .banner-buttons .btn-2 {
-    padding: 0.75rem 1.5rem;
-    color: #64748B;
-    border-radius: 8px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    text-decoration: none;
+    padding: 0.75rem 1.5rem; /* Espaçamento interno */
+    color: #64748B; /* Cor do texto */
+    border-radius: 8px; /* Bordas arredondadas */
+    font-family: 'Poppins', sans-serif; /* Fonte: 'Poppins', sans-serif */
+    font-weight: bold; /* Peso da fonte: Negrito */
+    text-decoration: none; /* Remove sublinhado */
 }
 
-/* Clients Info Section */
+/* Estilos da Seção de Clientes */
 .clients-info {
-    display: flex; /* Changed to flexbox for horizontal alignment */
-    gap: 1rem;
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    color: #94A3B8;
-    align-items: center; /* Vertically aligns the images */
-    justify-content: center; /* Ensures the images are centered */
-    flex-direction: row; /* Ensures the avatars are in a line */
+    display: flex; /* Exibição flexível */
+    gap: 1rem; /* Espaçamento entre os itens */
+    font-family: 'Poppins', sans-serif; /* Fonte: 'Poppins', sans-serif */
+    font-size: 14px; /* Tamanho da fonte: 14px */
+    color: #94A3B8; /* Cor do texto */
+    align-items: center; /* Alinha os itens verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    flex-direction: row; /* Alinha os avatares horizontalmente */
 }
 
-/* Client Image Style */
+/* Estilo da Imagem do Cliente */
 .clients-info img {
-    width: 30px; /* Adjust the size of the avatars as needed */
-    height: 30px; /* Makes the images round */
-    border-radius: 50%; /* Makes the images round */
-    margin-left: 0px;
+    width: 30px; /* Tamanho da imagem */
+    height: 30px; /* Tamanho da imagem */
+    border-radius: 50%; /* Faz a imagem redonda */
+    margin-left: 0px; /* Sem margem à esquerda */
 }
 
-/* Client Text */
+/* Texto do Cliente */
 .clients-info span {
-    margin-top: 0.1rem; /* Space between avatar and text */
-    font-size: 14px;
-    color: #94A3B8;
+    margin-top: 0.1rem; /* Espaçamento acima do texto */
+    font-size: 14px; /* Tamanho da fonte: 14px */
+    color: #94A3B8; /* Cor do texto */
 }
 
-/* Purple Section */
+/* Seção Roxa */
 .purple-section {
-    flex: none;
-    background-color: #6729FF;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;  /* Aligns content to the bottom */
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 45%;
-    height: 100vh; /* Ensures the section takes the full height of the screen */
-    padding: 0; /* Removes padding to make the image touch */
+    flex: none; /* Não flexível */
+    background-color: #6729FF; /* Cor de fundo roxa */
+    display: flex; /* Exibição flexível */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: flex-end; /* Alinha os itens ao fundo */
+    position: absolute; /* Posição absoluta */
+    top: 0; /* Topo da tela */
+    right: 0; /* Lado direito */
+    width: 45%; /* Largura de 45% */
+    height: 100vh; /* Altura de 100% da tela */
+    padding: 0; /* Remove o padding */
 }
 
-/* Phone Container */
+/* Container do Celular */
 .phone-container {
-    position: relative;
-    width: 100%;
-    height: 100%;  /* Ensures the container takes the full height */
-    display: flex;
-    justify-content: center; /* Centers the image horizontally */
+    position: relative; /* Posicionamento relativo */
+    width: 100%; /* Largura de 100% */
+    height: 100%; /* Altura de 100% */
+    display: flex; /* Exibição flexível */
+    justify-content: center; /* Centraliza horizontalmente */
 }
 
-/* Phone Image */
+/* Imagem do Celular */
 .phone-image {
-    max-width: 50%; /* Reduces the width of the image to 50% */
-    height: auto;
-    position: absolute;
-    bottom: 0;  /* Ensures the image is at the bottom */
-    left: 50%;
-    transform: translateX(-50%);  /* Centers the image horizontally */
+    max-width: 50%; /* Largura máxima de 50% */
+    height: auto; /* Altura automática */
+    position: absolute; /* Posição absoluta */
+    bottom: 0; /* Alinha na parte inferior */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Centraliza o conteúdo */
 }
 
-/* Tooltip Styles */
+/* Estilos de Tooltip */
 .tooltip {
-    position: absolute;
-    background-color: #ffffff;
-    color: #6729FF;
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    white-space: nowrap;
+    position: absolute; /* Posição absoluta */
+    background-color: #ffffff; /* Cor de fundo branca */
+    color: #6729FF; /* Cor do texto roxa */
+    padding: 0.5rem 1rem; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    font-family: 'Poppins', sans-serif; /* Fonte: 'Poppins', sans-serif */
+    font-size: 14px; /* Tamanho da fonte: 14px */
+    font-weight: bold; /* Peso da fonte: Negrito */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    white-space: nowrap; /* Impede quebra de linha */
 }
 
+/* Triângulo da Tooltip */
 .tooltip::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: -10px;
-    transform: translateY(-50%);
-    border-width: 6px;
-    border-style: solid;
-    border-color: transparent #ffffff transparent transparent;
+    content: ''; /* Cria um triângulo */
+    position: absolute; /* Posição absoluta */
+    top: 50%; /* Centraliza verticalmente */
+    left: -10px; /* Coloca à esquerda */
+    transform: translateY(-50%); /* Centraliza verticalmente */
+    border-width: 6px; /* Tamanho do triângulo */
+    border-style: solid; /* Estilo sólido */
+    border-color: transparent #ffffff transparent transparent; /* Cores do triângulo */
 }
 
-/* Benefits Section */
+/* Estilos da Seção de Benefícios */
 .benefits-section {
-    background-color: white;
-    padding: 4rem 2rem;
-    margin-top: 98px; /* Adds desired spacing between top and section */
+    background-color: white; /* Cor de fundo branca */
+    padding: 4rem 2rem; /* Espaçamento interno */
+    margin-top: 98px; /* Distância da parte superior */
 }
 
-/* Layout of the Benefits Section */
+
+/* Layout da Seção de Benefícios */
 .benefits-layout {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 2rem;
+    display: flex; /* Usa o modelo de layout flexível */
+    justify-content: space-between; /* Distribui os itens com espaço entre eles */
+    align-items: flex-start; /* Alinha os itens no topo */
+    gap: 2rem; /* Espaçamento de 2rem entre os itens */
 }
 
-/* Information on the left */
+/* Informações à esquerda */
 .benefits-info {
-    flex: 1;
-    text-align: left;
-    max-width: 40%;
+    flex: 1; /* Ocupa o espaço restante */
+    text-align: left; /* Alinha o texto à esquerda */
+    max-width: 40%; /* Limita a largura a 40% */
 }
 
-/* Section Title */
+/* Título da Seção */
 .benefits-info h2 {
-    font-family: 'Outfit', sans-serif;
-    font-size: 32px;
-    color: #475569;
-    margin-bottom: 1rem;
-    line-height: 1.2;
+    font-family: 'Outfit', sans-serif; /* Fonte utilizada */
+    font-size: 32px; /* Tamanho da fonte */
+    color: #475569; /* Cor do texto */
+    margin-bottom: 1rem; /* Espaçamento abaixo do título */
+    line-height: 1.2; /* Altura da linha */
 }
 
 .highlighted-text {
-    color: #6729FF !important; /* Adding !important to ensure the purple color is applied */
+    color: #6729FF !important; /* Adiciona !important para garantir que a cor roxa seja aplicada */
 }
 
 .benefits-info h2 span {
-    color: inherit; /* Inherits the color of the title, keeping the original color */
+    color: inherit; /* Herda a cor do título */
 }
 
+/* Faz com que "Benefícios Exclusivos" vá para a primeira linha */
 .benefits-info h2 span:first-child {
-    display: block; /* Makes "Exclusive Benefits" go to the first line */
+    display: block; 
 }
 
-/* Section Description */
+/* Descrição da Seção */
 .benefits-info p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    color: #64748B;
-    margin-bottom: 2rem;
+    font-family: 'Poppins', sans-serif; /* Fonte utilizada */
+    font-size: 16px; /* Tamanho da fonte */
+    color: #64748B; /* Cor do texto */
+    margin-bottom: 2rem; /* Espaçamento abaixo do parágrafo */
 }
 
 .benefits-grid {
-    flex: 2;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Forces two columns */
-    gap: 1.5rem;
-    max-width: 1000px; /* Limits the total width of the grid */
+    flex: 2; /* Ocupa duas vezes mais espaço */
+    display: grid; /* Layout de grade */
+    grid-template-columns: repeat(2, 1fr); /* Cria duas colunas */
+    gap: 1.5rem; /* Espaçamento entre os itens da grade */
+    max-width: 1000px; /* Limita a largura máxima da grade */
 }
 
-/* Benefit Cards */
+/* Cartões de Benefícios */
 .benefit-card {
-    background-color: #ffffff;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 280px; /* Limits the width of the cards */
-    margin: 0 auto; /* Centers the cards */
+    background-color: #ffffff; /* Cor de fundo dos cartões */
+    padding: 1.5rem; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    max-width: 280px; /* Limita a largura dos cartões */
+    margin: 0 auto; /* Centraliza os cartões */
 }
 
-/* Card Title */
+/* Título do Cartão */
 .benefit-card h3 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-    color: #6729FF;
-    margin-bottom: 0.5rem;
+    font-family: 'Poppins', sans-serif; /* Fonte utilizada */
+    font-size: 20px; /* Tamanho da fonte */
+    color: #6729FF; /* Cor do texto */
+    margin-bottom: 0.5rem; /* Espaçamento abaixo do título */
 }
 
-/* Card Description */
+/* Descrição do Cartão */
 .benefit-card p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    color: #64748B;
+    font-family: 'Poppins', sans-serif; /* Fonte utilizada */
+    font-size: 14px; /* Tamanho da fonte */
+    color: #64748B; /* Cor do texto */
 }
 
-/* "See more" Button in each Card */
+/* Botão "Veja mais" em cada Cartão */
 .btn-more-info {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    background-color: #6729FF;
-    color: #ffffff;
-    border-radius: 8px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    text-decoration: none;
-    transition: background-color 0.3s;
+    display: inline-block; /* Exibe o botão em linha */
+    padding: 0.75rem 1.5rem; /* Espaçamento interno */
+    background-color: #6729FF; /* Cor de fundo roxa */
+    color: #ffffff; /* Cor do texto branca */
+    border-radius: 8px; /* Bordas arredondadas */
+    font-family: 'Poppins', sans-serif; /* Fonte utilizada */
+    font-weight: bold; /* Fonte em negrito */
+    text-decoration: none; /* Remove sublinhado */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
 }
 
 .btn-more-info:hover {
-    background-color: #5600c9;
+    background-color: #5600c9; /* Cor de fundo mais escura ao passar o mouse */
 }
 
-/* "CARDS" Title above description */
+/* Título "CARTÕES" acima da descrição */
 .purple-title {
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    color: #6729FF;
-    margin-bottom: 0.5rem; /* Space below the title */
-    text-transform: uppercase; /* Uppercase text */
+    font-family: 'Poppins', sans-serif; /* Fonte utilizada */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: 600; /* Peso da fonte */
+    color: #6729FF; /* Cor do texto roxa */
+    margin-bottom: 0.5rem; /* Espaçamento abaixo do título */
+    text-transform: uppercase; /* Transforma o texto para maiúsculas */
 }
 
-/* "See more information" text link */
+/* Link de texto "Veja mais informações" */
 .text-link {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem; /* Spacing between text and arrow */
-    color: #6729FF;
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer; /* Indicates it's clickable */
-    text-decoration: none;
-    transition: color 0.3s;
+    display: flex; /* Exibição flexível */
+    align-items: center; /* Alinha verticalmente o texto e o ícone */
+    gap: 0.5rem; /* Espaçamento entre o texto e a seta */
+    color: #6729FF; /* Cor do texto roxa */
+    font-family: 'Poppins', sans-serif; /* Fonte utilizada */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: 600; /* Fonte em negrito */
+    cursor: pointer; /* Indica que o item é clicável */
+    text-decoration: none; /* Remove sublinhado */
+    transition: color 0.3s; /* Transição suave para a cor */
 }
 
 .text-link:hover {
-    color: #5600c9; /* Hover effect */
+    color: #5600c9; /* Cor do texto ao passar o mouse */
 }
 
-/* Arrow Icon */
+/* Ícone da seta */
 .arrow-icon {
-    width: 16px; /* Adjust size as needed */
-    height: auto;
+    width: 16px; /* Tamanho da seta */
+    height: auto; /* Altura automática */
 }
 
-/* Grid Adjustment */
+/* Ajuste na grade de benefícios */
 .benefits-grid .benefit-card:nth-child(1),
 .benefits-grid .benefit-card:nth-child(2) {
-    grid-column: span 1; /* Each one takes one column */
+    grid-column: span 1; /* Cada um ocupa uma coluna */
 }
 
 .benefits-grid .benefit-card:nth-child(3),
 .benefits-grid .benefit-card:nth-child(4) {
-    grid-column: span 1; /* Each one takes one column */
+    grid-column: span 1; /* Cada um ocupa uma coluna */
 }
 
-/* Card Header Style */
+/* Estilo do Cabeçalho do Cartão */
 .card-header {
-    display: flex; /* Uses flexbox to align icon and title */
-    align-items: center; /* Vertically aligns icon and text */
-    gap: 0.8rem; /* Space between icon and title */
-    margin-bottom: 1rem; /* Space below the header */
+    display: flex; /* Exibe os itens com layout flexível */
+    align-items: center; /* Alinha o ícone e o título verticalmente */
+    gap: 0.8rem; /* Espaçamento entre o ícone e o título */
+    margin-bottom: 1rem; /* Espaçamento abaixo do cabeçalho */
 }
 
-/* Icon in the cards */
+/* Ícone nos cartões */
 .card-icon {
-    width: 32px; /* Icon width */
-    height: 32px; /* Icon height */
-    flex-shrink: 0; /* Prevents the icon from shrinking */
+    width: 32px; /* Largura do ícone */
+    height: 32px; /* Altura do ícone */
+    flex-shrink: 0; /* Impede que o ícone encolha */
 }
 
+/* Estilo dos Retângulos no Cartão */
 .benefit-card .retangulos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px; /* Spacing between rectangles */
-    margin-top: 1rem; /* Space between text and rectangles */
+    display: flex; /* Exibe os retângulos com layout flexível */
+    justify-content: center; /* Centraliza os retângulos */
+    align-items: center; /* Alinha os retângulos verticalmente */
+    gap: 8px; /* Espaçamento entre os retângulos */
+    margin-top: 1rem; /* Espaçamento acima dos retângulos */
 }
 
-/* Style for each rectangle */
+/* Estilo de cada retângulo */
 .benefit-card .retangulo {
-    width: 100px; /* Adjust size as needed */
-    height: auto; /* Maintains the image proportion */
+    width: 100px; /* Largura do retângulo */
+    height: auto; /* Altura automática */
 }
 
-/* Custom style for Digital Wallet card */
+/* Estilo personalizado para o cartão de Carteira Digital */
 .benefits-grid .wallet-card {
-    grid-column: span 2; /* Takes up two columns horizontally */
-    background-color: #F3F2FF; /* Specific background */
-    text-align: left; /* Aligns the text */
+    grid-column: span 2; /* Ocupa duas colunas horizontalmente */
+    background-color: #F3F2FF; /* Cor de fundo específica */
+    text-align: left; /* Alinha o texto à esquerda */
 }
 
-/* Adjustment to the card title */
+/* Ajuste no título do cartão de carteira digital */
 .benefits-grid .wallet-card h3 {
-    color: #6729FF; /* Title color */
-    font-size: 24px; /* Larger size for emphasis */
-    margin-bottom: 0.5rem;
+    color: #6729FF; /* Cor do título */
+    font-size: 24px; /* Tamanho maior do título */
+    margin-bottom: 0.5rem; /* Espaçamento abaixo do título */
 }
 
-/* Adjustment to the card text */
+/* Ajuste no texto do cartão de carteira digital */
 .benefits-grid .wallet-card p {
-    color: #475569; /* Information color */
-    font-size: 16px;
-    line-height: 1.5;
+    color: #475569; /* Cor do texto */
+    font-size: 16px; /* Tamanho da fonte */
+    line-height: 1.5; /* Altura da linha */
 }
+
+/* Estilo da seção com imagem e informações do app */
+.image-section {
+    display: flex; /* Layout flexível */
+    justify-content: space-between; /* Espaçamento entre imagem e texto */
+    align-items: center; /* Alinha verticalmente */
+    padding: 2rem; /* Espaçamento interno */
+    background-color: #F9FAFB; /* Cor de fundo clara */
+    gap: 2rem; /* Espaçamento entre os elementos */
+}
+
+
+
+/* Seção de app */
+.app-section {
+    background-color: #ffffff; /* Cor de fundo clara */
+    padding-top: 6rem; /* Aumentado para criar mais espaçamento superior */
+    padding-bottom: 2rem; /* Espaçamento inferior */
+}
+
+
+/* Contêiner do app */
+.app-container {
+    display: flex; /* Layout flexível */
+    justify-content: space-between; /* Espaçamento entre imagem e texto */
+    align-items: flex-start; /* Alinha verticalmente ao topo */
+    gap: 2rem; /* Espaçamento entre a imagem e o texto */
+    padding: 0 2rem; /* Espaçamento interno */
+}
+
+/* Estilo da imagem */
+.left-image {
+    width: 380px; /* Define a largura fixa */
+    height: 609px; /* Define a altura fixa */
+    object-fit: cover; /* Ajusta a imagem sem distorção */
+    border-radius: 8px; /* Bordas arredondadas */
+    margin-left: 2rem; /* Adiciona margem à esquerda para afastar da borda */
+}
+
+/* Estilo da seção de informações do app */
+.app-info {
+    flex: 1; /* Ocupa o espaço restante */
+    text-align: left; /* Alinha o texto à esquerda */
+    max-width: 40%; /* Reduz a largura para acomodar mais espaço */
+    margin-left: auto; /* Empurra a seção para o lado direito */
+    padding-right: 2rem; /* Adiciona espaçamento à direita */
+}
+
+/* Título do app */
+.app-title {
+    font-family: 'Poppins', sans-serif; /* Fonte utilizada */
+    font-size: 16px; /* Tamanho do título */
+    font-weight: 600; /* Peso da fonte */
+    color: #6729FF; /* Cor do título */
+    text-transform: uppercase; /* Texto em maiúsculas */
+    margin-bottom: 0.5rem; /* Espaçamento abaixo do título */
+}
+
+/* Subtítulo do app */
+.app-subtitle {
+    font-family: 'Outfit', sans-serif; /* Fonte utilizada */
+    font-size: 32px; /* Tamanho da fonte */
+    color: #475569; /* Cor do texto */
+    margin-bottom: 1rem; /* Espaçamento abaixo do subtítulo */
+    line-height: 1.2; /* Altura da linha */
+}
+
+/* Descrição do app */
+.app-description {
+    font-family: 'Poppins', sans-serif; /* Fonte utilizada */
+    font-size: 16px; /* Tamanho da fonte */
+    color: #64748B; /* Cor do texto */
+    margin-bottom: 1.5rem; /* Espaçamento abaixo do texto */
+    line-height: 1.5; /* Altura da linha */
+}
+
+
+/* Estilo das informações adicionais abaixo da descrição */
+.app-features {
+    margin-top: 1rem; /* Espaçamento acima da seção */
+    display: flex; /* Layout flexível */
+    flex-direction: column; /* Organiza os itens verticalmente */
+    gap: 0.75rem; /* Espaçamento entre os itens */
+}
+
+/* Estilo de cada opção */
+.feature {
+    display: flex; /* Layout flexível para alinhar ícone e texto */
+    align-items: center; /* Alinha verticalmente os itens */
+    gap: 0.75rem; /* Espaçamento entre o ícone e o texto */
+}
+
+/* Estilo do ícone */
+.feature-icon {
+    width: 32px; /* Largura do ícone */
+    height: 32px; /* Altura do ícone */
+    object-fit: contain; /* Ajusta o tamanho sem distorcer */
+}
+
+/* Estilo do texto */
+.feature-text {
+    display: flex; /* Layout flexível */
+    flex-direction: column; /* Organiza título e descrição verticalmente */
+}
+
+/* Título das opções */
+.feature-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #6729FF;
+    margin-bottom: 0.2rem; /* Reduz o espaço abaixo do título */
+}
+
+/* Descrição das opções */
+.feature-description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #64748B;
+    margin-top: 0; /* Remove o espaço extra acima da descrição */
+}
+
+
+/* Contêiner do ícone com fundo roxo */
+.feature-icon-container {
+    width: 48px; /* Largura do quadrado */
+    height: 48px; /* Altura do quadrado */
+    background-color: #6729FF; /* Cor de fundo roxa */
+    border-radius: 8px; /* Bordas arredondadas */
+    display: flex; /* Layout flexível */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+/* Estilo do ícone */
+.feature-icon {
+    width: 24px; /* Largura do ícone */
+    height: 24px; /* Altura do ícone */
+    object-fit: contain; /* Ajusta o tamanho sem distorcer */
+}
+
+
