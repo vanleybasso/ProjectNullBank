@@ -586,3 +586,119 @@ header {
 }
 
 
+/* Seção do Aplicativo Mobile */
+.mobile-app {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #5a0ecc;
+    padding: 3rem 1.5rem;
+    color: white;
+    border-radius: 10px;
+    margin: 3rem auto;
+    max-width: 1200px;
+}
+
+.mobile-app .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.mobile-app .app-text {
+    flex: 1;
+    margin-right: 2rem;
+}
+
+.mobile-app h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    color: white
+}
+
+.mobile-app h2 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+    white-space: normal;
+    word-break: break-word; /* Para forçar quebras em telas menores */
+    color: white;
+}
+
+
+.mobile-app p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.mobile-app .app-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.mobile-app .btn-store {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    background-color: white;
+    color: #5a0ecc;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.mobile-app .btn-store img {
+    width: 20px;
+    height: auto;
+}
+
+.mobile-app .btn-store:hover {
+    background-color: #e0d4ff;
+}
+
+/* Ajuste das imagens do aplicativo */
+.mobile-app .app-images {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: flex-start; /* Alinha o conteúdo à esquerda */
+    align-items: center;
+    gap: 0; /* Remove o espaçamento entre as imagens */
+}
+
+.mobile-app .app-image-main {
+    position: absolute; /* Torna o posicionamento independente */
+    z-index: 2; /* Garante que a primeira imagem fique sobre a segunda */
+    width: 300px;
+    left: -20px; /* Ajuste do deslocamento para a esquerda */
+    top: -160px; /* Ajuste do deslocamento da imagem para baixo */
+}
+
+.mobile-app .app-image-secondary {
+    position: absolute; /* Torna o posicionamento independente */
+    z-index: 1; /* Garante que a segunda imagem fique atrás da primeira */
+    width: 300px; /* Tamanho da segunda imagem */
+    left: 130px; /* Ajuste para esconder a imagem à esquerda */
+    top: -110px; /* Alinha verticalmente com a primeira imagem */
+}
+
+.mobile-app .app-image-main img,
+.mobile-app .app-image-secondary img {
+    width: 100%;
+}
