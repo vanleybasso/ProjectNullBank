@@ -591,10 +591,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #5a0ecc;
+    background-color: #6729FF;
     padding: 3rem 1.5rem;
     color: white;
-    border-radius: 10px;
+    
     margin: 3rem auto;
     max-width: 1200px;
 }
@@ -654,7 +654,7 @@ header {
     gap: 0.5rem;
     padding: 0.8rem 1.5rem;
     background-color: white;
-    color: #5a0ecc;
+    color: #6729FF;
     border-radius: 8px;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
@@ -687,7 +687,7 @@ header {
     z-index: 2; /* Garante que a primeira imagem fique sobre a segunda */
     width: 300px;
     left: -20px; /* Ajuste do deslocamento para a esquerda */
-    top: -160px; /* Ajuste do deslocamento da imagem para baixo */
+    top: -165px; /* Ajuste do deslocamento da imagem para baixo */
 }
 
 .mobile-app .app-image-secondary {
@@ -701,4 +701,224 @@ header {
 .mobile-app .app-image-main img,
 .mobile-app .app-image-secondary img {
     width: 100%;
+}
+
+
+/* Remove qualquer espaço entre as seções */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Seção do Banner */
+.banner-section {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.banner-section .banner-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.banner-section .banner-content {
+    position: absolute;
+    top: 45%; /* Ajustado para mover o conteúdo mais para cima */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
+
+.banner-section .banner-title {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+}
+
+.banner-section .btn-create-account {
+    padding: 0.6rem 1.5rem;  /* Reduzindo o padding para diminuir o tamanho do botão */
+    background-color: #6729FF;
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;  /* Opcional: reduzindo o tamanho da fonte */
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.banner-section .btn-create-account:hover {
+    background-color: #5a21c1;
+}
+
+
+
+
+.mobile-app {
+    margin-bottom: 0; 
+}
+
+footer {
+    background-color: #f9f9f9;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section h4 {
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #5b5b5b;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+    color: #7d4cc1;
+}
+
+.footer-section.newsletter form {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.footer-section.newsletter input {
+    width: calc(100% - 40px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 8px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif; /* Define a fonte como Poppins */
+    color: #94A3B8; /* Define a cor do texto */
+    
+}
+
+.footer-section.newsletter button {
+    background-color: #6729FF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.footer-section.newsletter button:hover {
+    background-color: #693a9c;
+}
+
+.social-media a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-media img {
+    width: 20px;
+    height: 20px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif; /* Define a fonte como Poppins */
+    color: #94A3B8; /* Define a cor do texto */
+}
+
+.footer-bottom ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.footer-bottom ul li {
+    margin-left: 15px;
+}
+
+.footer-bottom ul li a {
+    text-decoration: none;
+    color: #94A3B8; /* Define a cor do texto */
+    font-family: 'Poppins', sans-serif; /* Define a fonte como Poppins */
+}
+
+.footer-bottom ul li a:hover {
+    color: #64748B;
+}
+
+.footer-section.newsletter {
+    position: relative;
+}
+
+.footer-section.newsletter .social-media {
+    margin-top: 20px; /* Adicionado para afastar as imagens do campo de e-mail */
+}
+
+.footer-section h4 {
+    font-family: 'Outfit', sans-serif; /* Define a fonte como Outfit */
+    color: #64748B; /* Define a cor do texto */
+    font-weight: 600; /* Mantém o peso do texto */
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    font-family: 'Poppins', sans-serif; /* Define a fonte como Poppins */
+    color: #94A3B8; /* Define a cor do texto */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-weight: 400; /* Define o peso do texto como regular */
+}
+
+.footer-section ul li a:hover {
+    color: #64748B; /* Cor ao passar o mouse (opcional) */
+}
+
+.footer-section.newsletter p {
+    font-family: 'Poppins', sans-serif; /* Define a fonte como Poppins */
+    color: #94A3B8; /* Define a cor do texto */
+    font-size: 14px; /* Tamanho da fonte opcional */
+    margin-bottom: 10px; /* Espaçamento opcional */
+}
+
+.footer-bottom h3.footer-title {
+    font-family: 'Outfit', sans-serif;
+    color: #6729FF;
+    font-size: 24px;
+    margin: 10px 0;
 }
