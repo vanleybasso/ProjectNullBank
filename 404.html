@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Não Encontrada - 404</title>
+  <style>
+    /* Estilos do Header */
+    header {
+      background-color: #ffffff;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    /* Estilos do Container de Navegação */
+    .navigation .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Estilos do Logo */
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #6729FF;
+      text-decoration: none;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    /* Estilos dos Links de Navegação */
+    .navigation-links {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    .navigation-links a {
+      text-decoration: none;
+      color: #94A3B8;
+      font-size: 16px;
+      font-family: 'Poppins', sans-serif;
+      transition: color 0.3s;
+    }
+
+    .navigation-links a:hover {
+      color: #6729FF;
+    }
+
+    /* Estilos da página 404 */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f8f8f8;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+
+    .container-404 {
+      padding: 40px;
+      border-radius: 10px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 80%;
+      max-width: 600px;
+    }
+
+    .container-404 h1 {
+      font-size: 6rem;
+      color: #6729FF;
+      margin: 0;
+    }
+
+    .container-404 p {
+      font-size: 1.5rem;
+      margin: 20px 0;
+    }
+
+    .container-404 .joke {
+      font-size: 1.2rem;
+      font-style: italic;
+      color: #64748B;
+    }
+
+    .btn-home {
+      padding: 0.75rem 1.5rem;
+      background-color: #EEE5FF;
+      color: #6729FF;
+      font-size: 16px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: background-color 0.3s;
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    .btn-home:hover {
+      background-color: #e3d4ff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container-404">
+    <h1>404</h1>
+    <p>Ops! A página que você está procurando não foi encontrada.</p>
+    <p class="joke">Parece que ela se perdeu no caminho, talvez tenha ido tomar um café!</p>
+    <a href="/" class="btn-home">Voltar para a Home</a>
+  </div>
+</body>
+</html>

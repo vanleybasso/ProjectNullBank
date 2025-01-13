@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <!-- Metatags e fontes externas -->
+    <!-- configuração e importações -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NULLBANK</title>
@@ -9,288 +10,309 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
-    <!-- Cabeçalho com navegação -->
+    <!-- cabeçalho com navegações e botão -->
     <header>
         <nav class="navigation">
             <div class="container">
-                <!-- Logo com link para a página inicial -->
+                <!-- logo -->
                 <a href="./index.html" class="logo">NullBank</a>
                 <ul class="navigation-links">
-                    <!-- Links de navegação -->
-                    <li><a href="index.html" class="start">Início</a></li>
+                    <!-- links de navegação -->
+                    <li><a href="index.html" class="start active">Início</a></li>
                     <li><a href="404.html">Para você</a></li>
                     <li><a href="404.html">Serviços</a></li>
                     <li><a href="contato.html">Contato</a></li>
                 </ul>
                 <div class="buttons">
-                    <!-- Botões de Cadastro e Login -->
+                    <!-- botões de cadastro e login -->
                     <a href="404.html" class="btn-register">Cadastrar-se</a>
                     <a href="404.html" class="btn-login">Fazer login</a>
                 </div>
             </div>
         </nav>
     </header>
-
-    <!-- Seção principal do conteúdo -->
-    <main>
-        <!-- Seção com banner e parte roxa lado a lado -->
-        <section class="main-content">
-            <!-- Lado esquerdo com banner, texto e botões de ação -->
-            <div class="banner-1">
-                <div class="banner-white">
-                    <h1>Transformando <br> nulos em infinitas <br> possibilidades.</h1>
-                    <p>Acreditamos que suas finanças podem ser tão simples <br> quanto você deseja. Conheça nossas soluções inovadoras.</p>
-                    <div class="banner-buttons">
-                        <!-- Botões de ação -->
-                        <a href="#" class="btn-1">Abra sua conta gratuita</a>
-                        <a href="#" class="btn-2">Saiba mais</a>
-                    </div>
-                    <!-- Seção de avatares -->
-                    <div class="clients-info">
-                        <img src="./assets/avatar-1.png" alt="Avatar de cliente" class="client-avatar">
-                        <img src="./assets/avatar-2.png" alt="Avatar de cliente" class="client-avatar">
-                        <img src="./assets/avatar-3.png" alt="Avatar de cliente" class="client-avatar">
-                        <img src="./assets/avatar-4.png" alt="Avatar de cliente" class="client-avatar">
-                        <img src="./assets/avatar-5.png" alt="Avatar de cliente" class="client-avatar">
-                        <img src="./assets/user.png" alt="Avatar de cliente" class="client-avatar">
-                        <span>+7.8 milhões de clientes</span>
-                    </div>
-                </div>
+    <!-- seção inicial branca da esquerda -->
+    <section class="home-section">
+        <h1>
+            <span>Transformando</span><br>
+            <span>nulos em infinitas</span><br>
+            <span>possibilidades.</span>
+        </h1>
+        <p>
+            <span>Acreditamos que suas finanças podem ser tão simples</span><br>
+            <span>quanto você deseja. Conheça nossas soluções inovadoras.</span>
+        </p>
+        <div class="home-buttons">
+            <a href="404.html" class="home-account">Abra sua conta gratuita</a>
+            <a href="404.html" class="home-informations">Saiba mais</a>
+        </div>
+    </section>
+    <!-- seção inicial roxa da direita -->
+    <section class="demo-app">
+        <div class="demo-apply">
+            <img src="./assets/mobile.png" alt="Imagem ilustrativa" class="demo-image">
+            <!-- balões  -->
+            <div class="balloons-dinner">
+                <img src="./assets/dollar.jpg" alt="Imagem do balão" class="balloons-image">
+                <p class="balloons-text">Sem taxas absurdas</p>
             </div>
-
-            <!-- Seção roxa com imagem de celular e balões -->
-            <div class="purple-section">
-                <div class="phone-container">
-                    <img src="./assets/mobile.png" alt="Imagem do celular" class="phone-image">
-                    <div class="tooltip" style="top: 10%; left: 80%;"> 
-                        <span>Sem taxas absurdas</span>
-                    </div>
-                    <div class="tooltip" style="top: 40%; left: 70%;"> 
-                        <span>Pagamentos em todo o mundo</span>
-                    </div>
-                    <div class="tooltip" style="top: 70%; left: 90%;"> 
-                        <span>100% pensado em você</span>
-                    </div>
-                </div>
+            <div class="balloons-dinner balloons-world">
+                <img src="./assets/earth.png" alt="Imagem do balão" class="balloons-image">
+                <p class="balloons-text">Pagamentos em todo o mundo</p>
             </div>
-        </section>
-
-        <!-- Seção de benefícios -->
-        <section class="benefits-section">
-            <div class="container">
-                <div class="benefits-layout">
-                    <!-- Lado esquerdo com título e descrição dos benefícios -->
-                    <div class="benefits-info">
-                        <h3 class="purple-title">CARTÕES</h3>
-                        <h2><span class="normal-text">Benefícios exclusivos</span> do cartão <span class="highlighted-text">NullBank</span></h2>
-                        <p>Maximize seu poder de compra com os benefícios que você merece. Conquiste mais recompensas, descontos e praticidade no seu dia a dia.</p>
-                        <div class="text-link">
-                            <!-- Link para mais informações -->
-                            <span>Ver mais informações</span>
-                            <img src="./assets/arrow.png" alt="Ícone de seta" class="arrow-icon">
-                        </div>
-                    </div>
-
-                    <!-- Lado direito com os cartões de benefícios -->
-                    <div class="benefits-grid">
-                        <!-- Cartões de benefícios individuais -->
-                        <div class="benefit-card">
-                            <div class="card-header">
-                                <img src="./assets/gift.png" alt="Ícone de Recompensas" class="card-icon">
-                                <h3>Recompensas</h3>
-                            </div>
-                            <p>Acumule pontos em cada compra e troque por produtos, viagens, e muito mais.</p>
-                        </div>
-
-                        <div class="benefit-card">
-                            <div class="card-header">
-                                <img src="./assets/percent.png" alt="Ícone de Descontos" class="card-icon">
-                                <h3>Descontos</h3>
-                            </div>
-                            <p>Taxas de juros e tarifas reduzidas em compras selecionadas, oferecendo melhores condições.</p>
-                        </div>
-
-                        <div class="benefit-card">
-                            <div class="card-header">
-                                <img src="./assets/banknote.png" alt="Ícone de Cashback" class="card-icon">
-                                <h3>Cashback</h3>
-                            </div>
-                            <p>Receba uma porcentagem do valor gasto de volta em todas as compras.</p>
-                        </div>
-
-                        <div class="benefit-card">
-                            <div class="card-header">
-                                <img src="./assets/credit-card.png" alt="Ícone de Cartão Internacional" class="card-icon">
-                                <h3>Cartão Internacional</h3>
-                            </div>
-                            <p>Oferece segurança para compras no exterior, garantindo maior praticidade e controle.</p>
-                        </div>
-
-                        <!-- Benefício adicional para carteiras digitais -->
-                        <div class="benefit-card wallet-card">
-                            <div class="card-header">
-                                <img src="./assets/wallet-minimal.png" alt="Ícone de Carteiras Digitais" class="card-icon">
-                                <h3>Carteiras Digitais</h3>
-                            </div>
-                            <p>Aceito em milhões de estabelecimentos e aplicativos. Mais praticidade em compras e viagens internacionais.</p>
-                            <div class="retangulos">
-                                <img src="./assets/ret-1.png" alt="Retângulo 1" class="retangulo">
-                                <img src="./assets/ret-2.png" alt="Retângulo 2" class="retangulo">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="balloons-user">
+                <img src="./assets/user.png" alt="Imagem do coração" class="balloons-user-image">
+                <p class="balloons-user-text">100% pensando em você</p>
             </div>
-             <!-- Seção com informações do aplicativo -->
-            <section class="app-section">
-                <div class="app-container">
-                    <img src="./assets/aplicativo.png" alt="Descrição da imagem" class="left-image">
-                    <div class="app-info">
-                        <h3 class="app-title">App</h3>
-                        <h2 class="app-subtitle">Controle total na<br>palma da sua mão</h2>
-
-                        <p class="app-description">
-                            Tudo o que você precisa, em apenas um aplicativo. Crie<br>
-                            uma conta, ative seu cartão e economize em tudo, desde<br>
-                            mercearias até carros alugados.
-                        </p>
-                        <div class="app-features">
-                            <div class="feature">
-                                <div class="feature-icon-container">
-                                    <img src="./assets/banknote2.png" alt="Ícone de Cashback" class="feature-icon">
-                                </div>
-                                <div class="feature-text">
-                                    <h4 class="feature-title">Cashback</h4>
-                                    <p class="feature-description">Receba parte do seu dinheiro de volta em todas as suas compras.</p>
-                                </div>
-                            </div>
-                            <div class="feature">
-                                <div class="feature-icon-container">
-                                    <img src="./assets/gift2.png" alt="Ícone de Ofertas" class="feature-icon">
-                                </div>
-                                <div class="feature-text">
-                                    <h4 class="feature-title">Ofertas</h4>
-                                    <p class="feature-description">Acesse promoções exclusivas diretamente no app.</p>
-                                </div>
-                            </div>
-                            <div class="feature">
-                                <div class="feature-icon-container">
-                                    <img src="./assets/shield.png" alt="Ícone de Segurança" class="feature-icon">
-                                </div>
-                                <div class="feature-text">
-                                    <h4 class="feature-title">Segurança</h4>
-                                    <p class="feature-description">Bloqueie e configure seu cartão com facilidade.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Seção anterior aos banner -->
-            </section>
-            <section class="mobile-app">
-                <div class="container">
-                    <div class="app-text">
-                        <h3>Disponível para você</h3>
-                        <h2>
-                            Controle total do seu dinheiro, <br>
-                            onde e quando quiser
-                        </h2>
-                        
-                        <p>
-                            Baixe o aplicativo e descubra uma nova forma de gerenciar<br>
-                            suas finanças, com praticidade, segurança e agilidade.
-                        </p>
-                        
-                        <div class="app-buttons">
-                            <a href="#" class="btn-store google-play">
-                                <img src="./assets/googleplay.png" alt="Ícone do Google Play">
-                                Google Play
-                            </a>
-                            <a href="#" class="btn-store apple-store">
-                                <img src="./assets/apple.png" alt="Ícone da App Store">
-                                Apple Store
-                            </a>
-                        </div>
-                    </div>
-                    <div class="app-images">
-                        <div class="app-image-main">
-                            <img src="./assets/app1.png" alt="Tela principal do aplicativo NullBank">
-                        </div>
-                        <div class="app-image-secondary">
-                            <img src="./assets/app2.png" alt="Outra tela do aplicativo NullBank">
-                        </div>
-                    </div>
-                    
-                </div>
-            </section>
-            <section class="banner-section">
-                <div class="banner-content">
-                    <h2 class="banner-title">Venha ser nulo<br>você também!</h2>
-                    <a href="#" class="btn-create-account">Crie sua conta</a>
-                </div>
-                <img src="./assets/banner.png" alt="Banner promocional" class="banner-image">
-            </section>
-            <!-- Footer-->
-            <footer>
-                <div class="footer-container">
-                    <div class="footer-section">
-                        <h4>Para você</h4>
-                        <ul>
-                            <li><a href="#">Contas pessoais</a></li>
-                            <li><a href="#">Empréstimos</a></li>
-                            <li><a href="#">Investimentos</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-section">
-                        <h4>NullBank</h4>
-                        <ul>
-                            <li><a href="#">Sobre nós</a></li>
-                            <li><a href="#">Nossa missão</a></li>
-                            <li><a href="#">Blog</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-section">
-                        <h4>Serviços</h4>
-                        <ul>
-                            <li><a href="#">Conta digital</a></li>
-                            <li><a href="#">Pix e transferências</a></li>
-                            <li><a href="#">Pagamentos online</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-section">
-                        <h4>Suporte</h4>
-                        <ul>
-                            <li><a href="#">Central de ajuda</a></li>
-                            <li><a href="#">Fale conosco</a></li>
-                            <li><a href="#">Perguntas frequentes</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-section newsletter">
-                        <h4>Newsletter</h4>
-                        <p>Receba novidades e dicas financeiras diretamente no seu email.</p>
-                        <form>
-                            <input type="email" placeholder="email@exemplo.com">
-                            <button type="submit">➔</button>
-                        </form>
-                        <div class="social-media">
-                            <a href="#"><img src="./assets/facebook.png" alt="Facebook"></a>
-                            <a href="#"><img src="./assets/twitter.png" alt="Twitter"></a>
-                            <a href="#"><img src="./assets/linkedin.png" alt="LinkedIn"></a>
-                            <a href="#"><img src="./assets/instagram.png" alt="Instagram"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer-bottom">
-                    <p>© 2025 NullBank. Todos os direitos reservados.</p>
-                    <!-- New title added here -->
-                    <h3 class="footer-title">NullBank</h3>
-                    <ul>
-                        <li><a href="#">Política de Privacidade</a></li>
-                        <li><a href="#">Termos de Uso</a></li>
-                    </ul>
-                </div>
-            </footer>
             
-         </main>
-    </body>
+        </div>
+    </section>
+    
+    
+    <!-- avatares da seção inicial -->
+    <section class="clients">
+        <div class="clients-container">
+            <img src="./assets/avatar-1.png" alt="Avatar 1" class="client">
+            <img src="./assets/avatar-2.png" alt="Avatar 2" class="client">
+            <img src="./assets/avatar-3.png" alt="Avatar 3" class="client">
+            <img src="./assets/avatar-4.png" alt="Avatar 4" class="client">
+            <img src="./assets/avatar-5.png" alt="Avatar 5" class="client">
+            <img src="./assets/user.png" alt="Avatar 6" class="client">
+        </div>
+        <p class="clients-infos">+7.8 milhões clientes</p>
+    </section>
+    <!-- seção de benefícios -->
+    <section class="advantages">
+        <div class="advantages-container">
+           
+            <h2 class="advantages-title">CARTÕES</h2>
+
+            
+            <h3 class="advantages-subtitle">Benefícios exclusivos<br>do cartão <span class="advantages-purple">NullBank</span></h3>
+
+            
+            <p class="advantages-description">
+                Maximize seu poder de compra com os benefícios<br>
+                que você merece. Conquiste mais recompensas,<br>
+                descontos e praticidade no seu dia a dia.
+            </p>
+           
+            <a href="404.html" class="btn-advantages">
+                Ver mais informações
+                <img src="./assets/arrow.png" alt="Seta" class="arrow-advantages">
+            </a>
+        </div>
+    </section>
+    <!-- seção com as 5 opções de benefícios ao lado direito da tela -->
+    <section class="utilities">
+        <div class="utilities-item">
+            <img src="./assets/gift.png" alt="Ícone Recompensas">
+            <div class="utilities-option">
+                <h4 class="utilities-title">Recompensas</h4>
+                <p class="utilities-description">Acumule pontos em cada compra e troque por produtos, serviços, milhas aéreas e muito mais.</p>
+            </div>
+        </div>
+        <div class="utilities-item">
+            <img src="./assets/percent.png" alt="Ícone Descontos">
+            <div class="utilities-option">
+                <h4 class="utilities-title">Descontos</h4>
+                <p class="utilities-description">Taxas de juros e tarifas de serviços competitivas, oferecendo melhores condições.</p>
+            </div>
+        </div>
+        <div class="utilities-item">
+            <img src="./assets/banknote.png" alt="Ícone Cashback">
+            <div class="utilities-option">
+                <h4 class="utilities-title">Cashback</h4>
+                <p class="utilities-description">Ganhe uma porcentagem do valor gasto de volta em todas as compras.</p>
+            </div>
+        </div>
+        <div class="utilities-item">
+            <img src="./assets/credit-card.png" alt="Ícone Cartão Internacional">
+            <div class="utilities-option">
+                <h4 class="utilities-title">Cartão Internacional</h4>
+                <p class="utilities-description">Geração de cartões virtuais para compras online, garantindo maior segurança e controle.</p>
+            </div>
+        </div>
+        <div class="utilities-long">
+            <img src="./assets/wallet-minimal.png" alt="Ícone Carteira Digital" class="utilities-icon">
+            <div class="utilities-option">
+                <h4 class="utilities-title">Carteiras Digitais</h4>
+                <p class="utilities-description">
+                    Aceito em milhões de estabelecimentos ao<br>
+                    redor do mundo, facilitando compras<br>
+                    e viagens internacionais.
+                </p>
+            </div>
+           
+            <div class="rectangle-white">
+                <img src="./assets/ret-1.png" alt="Retângulo Branco">
+            </div>
+           
+    <div class="rectangle-purple">
+        <img src="./assets/ret-2.png" alt="Retângulo Roxo">
+    </div>
+</div>
+        </div>
+        
+    </section>
+    <!-- seção do app -->
+    <section class="application">
+        <div class="application-container">
+            <!--fundo cinza da imagem do celular -->
+            <div class="gray-background">
+                <div class="gray-background-image"></div> 
+                <img src="./assets/aplicativo.png" alt="Descrição da imagem" class="application-left-image">
+            </div>
+            <!-- titulo, subtitulo e descricao da seção do aplicativo -->
+            <div class="application-info">
+                <h3 class="application-title">App</h3>
+                <h2 class="application-subtitle">Controle total na<br>palma da sua mão</h2>
+    
+                <p class="application-description">
+                    Tudo o que você precisa, em apenas um aplicativo. Crie<br>
+                    uma conta, ative seu cartão e economize em tudo, desde<br>
+                    mercearias até carros alugados.
+                </p>
+                <!-- 3 itens da seção do aplicativo -->
+                <div class="application-option">
+                    <div class="ops">
+                        <div class="application-icon-container">
+                            <img src="./assets/banknote2.png" alt="Ícone de Cashback" class="application-icon">
+                        </div>
+                        <div class="application-text">
+                            <h4 class="application-title">Cashback</h4>
+                            <p class="application-description">
+                                Receba parte do seu dinheiro de volta em todas as<br>
+                                suas compras.
+                            </p>
+                        </div>
+                    </div>
+                   
+                    <div class="ops">
+                        <div class="application-icon-container">
+                            <img src="./assets/gift2.png" alt="Ícone de Ofertas" class="application-icon">
+                        </div>
+                        <div class="application-text">
+                            <h4 class="application-title">Ofertas</h4>
+                            <p class="application-description">Acesse promoções exclusivas diretamente no app.</p>
+                        </div>
+                    </div>
+                    <div class="ops">
+                        <div class="application-icon-container">
+                            <img src="./assets/shield.png" alt="Ícone de Segurança" class="application-icon">
+                        </div>
+                        <div class="application-text">
+                            <h4 class="application-title">Segurança</h4>
+                            <p class="application-description">Bloqueie e configure seu cartão com facilidade.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- seção das lojas de aplicativos -->
+    <section class="availability">
+        <div class="availability-section">
+            <h3 class="availability-title">DISPONÍVEL PARA VOCÊ</h3>
+            <h2 class="availability-subtitle">Controle total do seu dinheiro, onde e quando quiser</h2>
+            <p class="availability-description">
+                Baixe o aplicativo e descubra uma nova forma de gerenciar<br>
+                com praticidade, segurança e agilidade.
+            </p>
+            <!-- botões da google play e app store -->
+            <div class="availability-buttons">
+                <a href="https://play.google.com/store/games?hl=pt_BR" class="availability-google">
+                    <img src="./assets/googleplay.png" alt="Google Play" class="availability-icon"> Google Play
+                </a>
+                <a href="https://www.apple.com/br/store" class="btn-apple">
+                    <img src="./assets/apple.png" alt="Apple Store" class="availability-icon"> Apple Store
+                </a>
+            </div>
+        </div>
+        <!-- duas fotos demonstrativas do app -->
+        <div class="availability-image-container">
+            <img src="./assets/app1.png" alt="Imagem ilustrativa" class="availability-image">
+            <img src="./assets/app2.png" alt="Imagem 2" class="availability-image-2">
+        </div>
+    </section>
+    <!--seção do banner final -->
+    <section class="banner-image">
+        <div class="banner-section">
+            <h2>Venha ser nulo<br>você também!</h2>
+            <a href="404.html" class="btn-banner">Crie sua conta</a>
+        </div>
+        <img src="./assets/banner.png" alt="Banner Promocional" class="banner-img">
+    </section>
+    <!-- footer-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Para você</h4>
+                <ul>
+                    <li><a href="404.html">Contas pessoais</a></li>
+                    <li><a href="404.html">Empréstimos</a></li>
+                    <li><a href="404.html">Investimentos</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>NullBank</h4>
+                <ul>
+                    <li><a href="404.html">Sobre nós</a></li>
+                    <li><a href="404.html">Nossa missão</a></li>
+                    <li><a href="404.html">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Serviços</h4>
+                <ul>
+                    <li><a href="404.html">Conta digital</a></li>
+                    <li><a href="404.html">Pix e transferências</a></li>
+                    <li><a href="404.html">Pagamentos online</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Suporte</h4>
+                <ul>
+                    <li><a href="404.html">Central de ajuda</a></li>
+                    <li><a href="404.html">Fale conosco</a></li>
+                    <li><a href="404.html">Perguntas frequentes</a></li>
+                </ul>
+            </div>
+            <div class="footer-section newsletter">
+                <h4>Newsletter</h4>
+                <p>Receba novidades e dicas financeiras diretamente no seu email.</p>
+                <form onsubmit="return showThankYouMessage()">
+                    <input type="email" placeholder="email@exemplo.com" required>
+                    <button type="submit">➔</button>
+                </form>
+                <div class="social-media">
+                    <a href="https://www.facebook.com" target="_blank"><img src="./assets/facebook.png" alt="Facebook"></a>
+                    <a href="https://twitter.com" target="_blank"><img src="./assets/twitter.png" alt="Twitter"></a>
+                    <a href="https://www.linkedin.com" target="_blank"><img src="./assets/linkedin.png" alt="LinkedIn"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="./assets/instagram.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 NullBank. Todos os direitos reservados.</p>
+            <h3 class="footer-title">NullBank</h3>
+            <ul>
+                <li><a href="404.html">Política de Privacidade</a></li>
+                <li><a href="404.html">Termos de Uso</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+    <!-- script de quando o usuário coloca o email válido e recebe mensagem de confirmação -->
+    <script>
+        function showThankYouMessage() {
+            alert("Obrigado por fazer parte da nossa Newsletter");
+            return true;  // Permite que o formulário seja enviado
+        }
+    </script>
+</body>
+
 </html>

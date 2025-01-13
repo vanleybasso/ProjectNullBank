@@ -1,789 +1,731 @@
-/* Estilos do Header */
+/* estilos do header */
 header {
-    background-color: #ffffff; /* Cor de fundo: Branco */
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Sombras suaves para o cabeçalho */
-    position: fixed; /* Fixa o cabeçalho no topo */
-    width: 100%; /* Largura: 100% da tela */
-    top: 0; /* Fixa no topo da página */
-    z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
+    background-color: #ffffff; 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
+    position: fixed; 
+    width: 100%; 
+    top: 0; 
+    z-index: 1000; 
 }
 
-/* Estilos do Container de Navegação */
+/* estilos da navegação do cabeçalho*/
 .navigation .container {
-    display: flex; /* Exibição flexível */
-    justify-content: space-between; /* Distribui os itens entre si */
-    align-items: center; /* Centraliza os itens verticalmente */
-    padding: 0.5rem 2rem; /* Espaçamento: 0.5rem em cima e embaixo, 2rem nas laterais */
-    max-width: 1200px; /* Limita a largura máxima */
-    margin: 0 auto; /* Centraliza horizontalmente */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 0.5rem 2rem; 
+    max-width: 1200px; 
+    margin: 0 auto; 
 }
 
-/* Estilos do Logo */
+/* estilos da logo */
 .logo {
-    font-size: 24px; /* Tamanho da fonte: 24px */
-    font-weight: bold; /* Peso da fonte: Negrito */
-    color: #6729FF; /* Cor: Roxo */
-    text-decoration: none; /* Remove sublinhado */
-    font-family: 'Outfit', sans-serif; /* Fonte: 'Outfit', sans-serif */
+    font-size: 24px; 
+    font-weight: bold; 
+    color: #6729FF; 
+    text-decoration: none; 
+    font-family: 'Outfit', sans-serif; 
 }
 
-/* Estilos dos Links de Navegação */
+/* estilos dos links do header */
 .navigation-links {
-    list-style: none; /* Remove os marcadores de lista */
-    display: flex; /* Exibição flexível */
-    gap: 2rem; /* Espaçamento de 2rem entre os itens */
+    list-style: none; 
+    display: flex; 
+    gap: 2rem; 
 }
 
+/* estilos do texto dos links */
 .navigation-links a {
-    text-decoration: none; /* Remove sublinhado */
-    color: #94A3B8; /* Cor: Cinza claro */
-    font-size: 16px; /* Tamanho da fonte: 16px */
-    font-family: 'Poppins', sans-serif; /* Fonte: 'Poppins', sans-serif */
-    transition: color 0.3s; /* Transição suave para a cor */
+    text-decoration: none; 
+    color: #94A3B8; 
+    font-size: 16px; 
+    font-family: 'Poppins', sans-serif; 
+    transition: color 0.3s; 
 }
 
-/* Efeito de Hover para os Links de Navegação */
+/* efeito hover para os links de navegação */
 .navigation-links a:hover {
-    color: #6729FF; /* Cor roxa ao passar o mouse */
+    color: #6729FF; 
 }
 
-/* Estilo específico para o link "Início" */
+/* estilo inicial para o link especifico "inicio */
 .navigation-links .start {
-    color: #94A3B8; /* Cor não ativa inicialmente */
+    color: #94A3B8; 
 }
 
 .navigation-links .start.active {
-    color: #6729FF; /* Cor roxa quando ativo */
+    color: #6729FF; 
 }
 
-/* Estilo da classe .active */
+
 .navigation-links a.active {
-    color: #6729FF; /* Cor roxa ao estar ativo */
+    color: #6729FF; 
 }
 
-/* Estilos dos Botões de Autenticação */
+/* estilo dos botões */
 .buttons {
-    display: flex; /* Exibição flexível */
-    gap: 3rem; /* Espaçamento de 3rem entre os botões */
-    align-items: center; /* Alinha os itens verticalmente */
+    display: flex; 
+    gap: 3rem; 
+    align-items: center; 
 }
 
-/* Estilo do Botão "Sign Up" */
+/* estilão do botão ''cadastrar-se" */
 .btn-register {
-    text-decoration: none; /* Remove sublinhado */
-    color: #94A3B8; /* Cor: Cinza claro */
-    font-family: 'Poppins', sans-serif; /* Fonte: 'Poppins', sans-serif */
-    font-size: 16px; /* Tamanho da fonte: 16px */
-    transition: color 0.3s; /* Transição suave para a cor */
+    text-decoration: none; 
+    color: #94A3B8; 
+    font-family: 'Poppins', sans-serif; 
+    font-size: 16px; 
+    transition: color 0.3s; 
 }
 
-/* Efeito de Hover para o Botão "Sign Up" */
+/* efeito hover do botão "cadastrar-se" */
 .btn-register:hover {
-    color: #6e00fa; /* Cor roxa ao passar o mouse */
+    color: #6e00fa; 
 }
 
-/* Estilo do Botão "Login" */
+/* estilo do botão de "login" */
 .btn-login {
-    padding: 0.5rem 1rem; /* Espaçamento interno */
-    background-color: #6729FF; /* Cor de fundo: Roxo */
-    color: #ffffff; /* Cor do texto: Branco */
-    border: none; /* Sem borda */
-    border-radius: 8px; /* Bordas arredondadas */
-    text-decoration: none; /* Remove sublinhado */
-    font-family: 'Poppins', sans-serif; /* Fonte: 'Poppins', sans-serif */
-    font-weight: bold; /* Peso da fonte: Negrito */
-    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+    padding: 0.5rem 1rem; 
+    background-color: #6729FF; 
+    color: #ffffff;
+    border: none; 
+    border-radius: 8px; 
+    text-decoration: none; 
+    font-family: 'Poppins', sans-serif; 
+    font-weight: bold; 
+    transition: background-color 0.3s; 
 }
 
-/* Efeito de Hover para o Botão "Login" */
+/* hover para o botão de login */
 .btn-login:hover {
-    background-color: #5600c9; /* Cor de fundo roxa mais escura ao passar o mouse */
+    background-color: #5600c9; 
 }
 
 .navigation-links a.active {
-    color: #6729FF; /* Cor roxa */
+    color: #6729FF; 
+}
+
+/* estilos da primeira seção branca lado esquerdo */
+.home-section {
+    margin-top: 6rem; 
+    padding-left: 112px; 
+    max-width: 800px; 
+}
+
+.home-section h1 {
+    font-family: 'Outfit', sans-serif; 
+    font-size: 64px; 
+    color: #475569; 
+    margin-bottom: 1rem; 
+}
+
+.home-section p {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 16px; 
+    color: #64748B; 
+    line-height: 1.6; 
+}
+
+/* estilo dos botões abaixo da descrição */
+.home-buttons {
+    display: flex; 
+    gap: 1rem; 
+    align-items: center; 
+}
+
+.home-account {
+    display: inline-block; 
+    padding: 0.75rem 1.5rem;
+    background-color: #EEE5FF; 
+    color: #6729FF; 
+    font-family: 'Poppins', sans-serif; 
+    font-size: 16px;
+    text-decoration: none; 
+    border-radius: 8px; 
+    font-weight: 600; 
+    transition: background-color 0.3s; 
+}
+
+.home-account:hover {
+    background-color: #e3d4ff; 
+}
+
+.home-informations {
+    display: inline-block; 
+    font-family: 'Poppins', sans-serif; 
+    font-size: 16px; 
+    color: #64748B; 
+    text-decoration: none; 
+    font-weight: 600; 
+    line-height: 1; 
+    transition: color 0.3s; 
+}
+
+.home-informations:hover {
+    color: #475569; 
+}
+
+/* estilos para os avatares */
+.clients {
+    margin-top: 3rem; 
+    padding-left: 112px; 
+}
+
+.clients-container {
+    display: flex; 
+    gap: 0; 
+}
+
+.client {
+    width: 30px; 
+    height: 30px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+}
+
+/* estilo para o texto "+7.8 milhões clientes" */
+.clients-infos {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 16px; 
+    color: #94A3B8; 
+    margin-top: 1rem; 
+}
+
+/* estilos da nova seção lateral roxa */
+.side-section {
+    display: flex; 
+    justify-content: space-between;
+    align-items: flex-start; 
+    background-color: #6729FF; 
+    height: 100vh; 
+    padding: 2rem; 
+}
+
+/* estilos da imagem container */
+.image-container {
+    flex: 1; 
+    overflow: hidden; 
+}
+
+.side-image {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+}
+
+/* estilos do conteúdo à direita */
+.content-container {
+    flex: 1; 
+    padding-left: 2rem; 
+    color: white; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.content-container p {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* estilos da nova seção à direita roxa */
+.demo-app {
+    background-color: #6729FF; 
+    width: 50%; 
+    position: absolute;
+    top: 0;
+    right: 0; 
+    height: 100vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: flex-start;
+    padding-top: 2rem; 
+}
+
+/* estilo para a imagem da seção */
+.demo-image {
+    width: 80%; 
+    max-width: 600px; 
+    height: auto; 
+    object-fit: cover; 
+    padding-top: 160px;
+    padding-left: 115px; 
+    
+}
+
+/* estilos da seção demo-app com umcontainer relativo */
+.demo-apply {
+    position: relative; 
+}
+
+/* estilos para os balãozinho */
+.balloons-dinner {
+    position: absolute; 
+    top: calc(140px + 6rem); 
+    left: 50%; 
+    transform: translateX(25%); 
+    background-color: #FFFFFF; 
+    padding: 0.5rem 1rem; 
+    border-radius: 8px; 
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+    width: 207px; 
+    height: 40px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); 
+}
+
+/* estilo da imagem dentro do balãozinho */
+.balloons-image {
+    width: 20px; 
+    height: 20px;
+    object-fit: cover; 
+}
+
+/* estilo do texto dentro do balãozinho */
+.balloons-text {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 14px; 
+    color: #475569; 
+    margin: 0; 
+}
+
+.balloons-world {
+    top: calc(140px + 260px); 
+    left: -25%; 
+    transform: translateX(25%); 
+    width: 284px; 
+    height: 40px; 
+}
+
+.balloons-user {
+    position: absolute;
+    top: calc(140px + 370px); 
+    left: 75%; 
+    transform: translateX(-20%); 
+    background-color: #FFFFFF;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 236px; 
+    height: 40px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+/* estilo da imagem dentro do terceiro balão */
+.balloons-user-image {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+
+/* estilo do texto dentro do terceiro balão */
+.balloons-user-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #475569;
+    margin: 0;
+}
+
+
+/* estilos para a nova seção de cartões */
+.advantages {
+    margin-top: 14rem; 
+    padding-left: 112px; 
+}
+
+/* título "cartões" */
+.advantages-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px; 
+    color: #6729FF; 
+    margin-bottom: 0.25rem; 
+}
+
+/* subtítulo */
+.advantages-subtitle {
+    font-family: 'Outfit', sans-serif; 
+    font-size: 40px; 
+    color: #475569; 
+    margin-bottom: 1rem; 
+}
+
+/* descrição */
+.advantages-description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px; 
+    color: #64748B; 
+    line-height: 1.6; 
+    margin-bottom: 1.5rem; 
+}
+
+/* estilo para o link "ver mais infos" */
+.btn-advantages {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 16px;
+    color: #6729FF; 
+    text-decoration: none; 
+    transition: color 0.3s; 
+}
+
+/* efeito de hover para o link ver mais infos */
+.btn-advantages:hover {
+    color: #5600c9; 
+}
+
+.advantages-purple {
+    color: #6729FF; 
+}
+
+.arrow-advantages {
+    width: 16px; 
+    height: auto; 
+    object-fit: contain;
+}
+
+/* estilos gerais */
+* {
+    box-sizing: border-box;
+}
+
+/* estilo para a seção de benefícios */
+.utilities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem; 
+    padding: 2rem; 
+    justify-content: flex-start; 
+    position: absolute; 
+    top: 47rem; 
+    right: 0; 
+    width: 50vw;
+    z-index: 10; 
+}
+
+/* estilo para cada item da seção de benefício */
+.utilities-item {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 1.5rem; 
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    width: calc(50% - 1rem); 
+    max-height: 200px; 
+    display: flex; 
+    flex-direction: row; 
+    align-items: flex-start; 
+    gap: 1rem; 
+}
+
+
+/* estilo da imagem dentro do card */
+.utilities-icon img {
+    width: 60px;
+    height: 60px; 
+    object-fit: contain; 
+}
+
+/* estilo do título de cada benefício */
+.utilities-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 20px;
+    color: #6729FF;
+    margin-top: 0.5rem; 
+    margin-bottom: 1rem; 
+    margin-top: 0; 
+}
+
+/* estilo da descrição de cada benefício */
+.utilities-description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #94A3B8;
+    line-height: 1.6;
+    margin-top: 0;
+}
+
+/* estilo do conteúdo do card  */
+.utilities-option {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    width: 100%; 
+    gap: 0.1rem; 
+}
+
+/* estilo para o card de "carteiras digitais" */
+.utilities-long {
+    display: flex; 
+    background-color: #F3F2FF;
+    width: calc(100% - 1rem);
+    flex-direction: row; 
+    align-items: center; 
+    padding: 1.5rem;
+    gap: 1rem; 
+    position: relative; 
+}
+
+/*  estilo do título e descrição dentro do card "carteiras digitais" */
+.utilities-long .utilities-option {
+    flex-direction: column; 
+    width: 100%; 
+}
+
+.utilities-long .utilities-title {
+    margin: 0; 
+}
+
+.utilities-long .utilities-description {
+    margin-top: 0.5rem; 
+}
+
+/* ajuste  para o ícone no card "carteiras digitais" */
+.utilities-long .utilities-icon {
+    align-self: flex-start; 
+    margin-top: 5px; 
+}
+
+/* estilo para o retângulo branco*/
+.rectangle-white {
+    position: absolute; 
+    right: 130px; 
+    bottom: -5px; 
+    z-index: 5; 
 }
 
 
 
-/* Estilos da Seção Principal (Banner) */
-.main-content {
-    display: flex; /* Exibição flexível */
-    justify-content: space-between; /* Espaçamento entre os itens */
-    align-items: flex-start; /* Alinha ao topo */
-    margin-top: 88px; /* Distância do cabeçalho */
-    padding: 0 80px; /* Espaçamento nas laterais */
+/* estilo para o retângulo roxo */
+.rectangle-purple {
+    position: absolute; 
+    right: 50px; 
+    bottom: 0px;
+    z-index: 4; 
 }
 
-.banner-1 {
-    flex: 1; /* Ocupa o restante do espaço */
-    display: flex; /* Exibição flexível */
-    justify-content: flex-start; /* Alinha o conteúdo à esquerda */
-    align-items: center; /* Centraliza verticalmente */
-}
-
-/* Seção branca do Banner */
-.banner-white {
-    background-color: #fff; /* Cor de fundo branca */
-    padding: 2rem; /* Espaçamento interno */
-}
-
-/* Título do Banner */
-.banner-1 h1 {
-    font-family: 'Outfit', sans-serif; /* Fonte: 'Outfit', sans-serif */
-    font-weight: 600; /* Peso da fonte: 600 */
-    font-size: 48px; /* Tamanho da fonte: 48px */
-    line-height: 1.2; /* Altura da linha */
-    color: #475569; /* Cor do texto */
-    margin-bottom: 1rem; /* Espaçamento abaixo */
-}
-
-/* Parágrafo do Banner */
-.banner-1 p {
-    font-family: 'Poppins', sans-serif; /* Fonte: 'Poppins', sans-serif */
-    font-size: 16px; /* Tamanho da fonte: 16px */
-    color: #64748B; /* Cor do texto */
-    margin-bottom: 2rem; /* Espaçamento abaixo */
-    max-width: 100%; /* Garante que o texto ocupe toda a largura */
-    word-wrap: break-word; /* Quebra de linha automática */
-    white-space: normal; /* Permite quebra de linha */
-}
-
-/* Botões na Seção do Banner */
-.banner-buttons {
-    display: flex; /* Exibição flexível */
-    gap: 20px; /* Espaçamento de 20px entre os botões */
-    margin-bottom: 2rem; /* Espaçamento abaixo */
-}
-
-/* Botão 1 no Banner */
-.banner-buttons .btn-1 {
-    padding: 0.75rem 1.5rem; /* Espaçamento interno */
-    background-color: #EEE5FF; /* Cor de fundo */
-    color: #6729FF; /* Cor do texto */
-    border-radius: 8px; /* Bordas arredondadas */
-    font-family: 'Poppins', sans-serif; /* Fonte: 'Poppins', sans-serif */
-    font-weight: bold; /* Peso da fonte: Negrito */
-    text-decoration: none; /* Remove sublinhado */
-}
-
-/* Botão 2 no Banner */
-.banner-buttons .btn-2 {
-    padding: 0.75rem 1.5rem; /* Espaçamento interno */
-    color: #64748B; /* Cor do texto */
-    border-radius: 8px; /* Bordas arredondadas */
-    font-family: 'Poppins', sans-serif; /* Fonte: 'Poppins', sans-serif */
-    font-weight: bold; /* Peso da fonte: Negrito */
-    text-decoration: none; /* Remove sublinhado */
-}
-
-/* Estilos da Seção de Clientes */
-.clients-info {
-    display: flex; /* Exibição flexível */
-    gap: 1rem; /* Espaçamento entre os itens */
-    font-family: 'Poppins', sans-serif; /* Fonte: 'Poppins', sans-serif */
-    font-size: 14px; /* Tamanho da fonte: 14px */
-    color: #94A3B8; /* Cor do texto */
-    align-items: center; /* Alinha os itens verticalmente */
-    justify-content: center; /* Centraliza horizontalmente */
-    flex-direction: row; /* Alinha os avatares horizontalmente */
-}
-
-/* Estilo da Imagem do Cliente */
-.clients-info img {
-    width: 30px; /* Tamanho da imagem */
-    height: 30px; /* Tamanho da imagem */
-    border-radius: 50%; /* Faz a imagem redonda */
-    margin-left: 0px; /* Sem margem à esquerda */
-}
-
-/* Texto do Cliente */
-.clients-info span {
-    margin-top: 0.1rem; /* Espaçamento acima do texto */
-    font-size: 14px; /* Tamanho da fonte: 14px */
-    color: #94A3B8; /* Cor do texto */
-}
-
-/* Seção Roxa */
-.purple-section {
-    flex: none; /* Não flexível */
-    background-color: #6729FF; /* Cor de fundo roxa */
-    display: flex; /* Exibição flexível */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: flex-end; /* Alinha os itens ao fundo */
-    position: absolute; /* Posição absoluta */
-    top: 0; /* Topo da tela */
-    right: 0; /* Lado direito */
-    width: 45%; /* Largura de 45% */
-    height: 100vh; /* Altura de 100% da tela */
-    padding: 0; /* Remove o padding */
-}
-
-/* Container do Celular */
-.phone-container {
-    position: relative; /* Posicionamento relativo */
-    width: 100%; /* Largura de 100% */
-    height: 100%; /* Altura de 100% */
-    display: flex; /* Exibição flexível */
-    justify-content: center; /* Centraliza horizontalmente */
-}
-
-/* Imagem do Celular */
-.phone-image {
-    max-width: 50%; /* Largura máxima de 50% */
-    height: auto; /* Altura automática */
-    position: absolute; /* Posição absoluta */
-    bottom: 0; /* Alinha na parte inferior */
-    left: 50%; /* Centraliza horizontalmente */
-    transform: translateX(-50%); /* Centraliza o conteúdo */
-}
-
-/* Estilos de Tooltip */
-.tooltip {
-    position: absolute; /* Posição absoluta */
-    background-color: #ffffff; /* Cor de fundo branca */
-    color: #6729FF; /* Cor do texto roxa */
-    padding: 0.5rem 1rem; /* Espaçamento interno */
-    border-radius: 8px; /* Bordas arredondadas */
-    font-family: 'Poppins', sans-serif; /* Fonte: 'Poppins', sans-serif */
-    font-size: 14px; /* Tamanho da fonte: 14px */
-    font-weight: bold; /* Peso da fonte: Negrito */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    white-space: nowrap; /* Impede quebra de linha */
-}
-
-/* Triângulo da Tooltip */
-.tooltip::after {
-    content: ''; /* Cria um triângulo */
-    position: absolute; /* Posição absoluta */
-    top: 50%; /* Centraliza verticalmente */
-    left: -10px; /* Coloca à esquerda */
-    transform: translateY(-50%); /* Centraliza verticalmente */
-    border-width: 6px; /* Tamanho do triângulo */
-    border-style: solid; /* Estilo sólido */
-    border-color: transparent #ffffff transparent transparent; /* Cores do triângulo */
-}
-
-/* Estilos da Seção de Benefícios */
-.benefits-section {
-    background-color: white; /* Cor de fundo branca */
-    padding: 4rem 2rem; /* Espaçamento interno */
-    margin-top: 98px; /* Distância da parte superior */
-}
-
-
-/* Layout da Seção de Benefícios */
-.benefits-layout {
-    display: flex; /* Usa o modelo de layout flexível */
-    justify-content: space-between; /* Distribui os itens com espaço entre eles */
-    align-items: flex-start; /* Alinha os itens no topo */
-    gap: 2rem; /* Espaçamento de 2rem entre os itens */
-}
-
-/* Informações à esquerda */
-.benefits-info {
-    flex: 1; /* Ocupa o espaço restante */
-    text-align: left; /* Alinha o texto à esquerda */
-    max-width: 40%; /* Limita a largura a 40% */
-}
-
-/* Título da Seção */
-.benefits-info h2 {
-    font-family: 'Outfit', sans-serif; /* Fonte utilizada */
-    font-size: 32px; /* Tamanho da fonte */
-    color: #475569; /* Cor do texto */
-    margin-bottom: 1rem; /* Espaçamento abaixo do título */
-    line-height: 1.2; /* Altura da linha */
-}
-
-.highlighted-text {
-    color: #6729FF !important; /* Adiciona !important para garantir que a cor roxa seja aplicada */
-}
-
-.benefits-info h2 span {
-    color: inherit; /* Herda a cor do título */
-}
-
-/* Faz com que "Benefícios Exclusivos" vá para a primeira linha */
-.benefits-info h2 span:first-child {
-    display: block; 
-}
-
-/* Descrição da Seção */
-.benefits-info p {
-    font-family: 'Poppins', sans-serif; /* Fonte utilizada */
-    font-size: 16px; /* Tamanho da fonte */
-    color: #64748B; /* Cor do texto */
-    margin-bottom: 2rem; /* Espaçamento abaixo do parágrafo */
-}
-
-.benefits-grid {
-    flex: 2; /* Ocupa duas vezes mais espaço */
-    display: grid; /* Layout de grade */
-    grid-template-columns: repeat(2, 1fr); /* Cria duas colunas */
-    gap: 1.5rem; /* Espaçamento entre os itens da grade */
-    max-width: 1000px; /* Limita a largura máxima da grade */
-}
-
-/* Cartões de Benefícios */
-.benefit-card {
-    background-color: #ffffff; /* Cor de fundo dos cartões */
-    padding: 1.5rem; /* Espaçamento interno */
-    border-radius: 8px; /* Bordas arredondadas */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    max-width: 280px; /* Limita a largura dos cartões */
-    margin: 0 auto; /* Centraliza os cartões */
-}
-
-/* Título do Cartão */
-.benefit-card h3 {
-    font-family: 'Poppins', sans-serif; /* Fonte utilizada */
-    font-size: 20px; /* Tamanho da fonte */
-    color: #6729FF; /* Cor do texto */
-    margin-bottom: 0.5rem; /* Espaçamento abaixo do título */
-}
-
-/* Descrição do Cartão */
-.benefit-card p {
-    font-family: 'Poppins', sans-serif; /* Fonte utilizada */
-    font-size: 14px; /* Tamanho da fonte */
-    color: #64748B; /* Cor do texto */
-}
-
-/* Botão "Veja mais" em cada Cartão */
-.btn-more-info {
-    display: inline-block; /* Exibe o botão em linha */
-    padding: 0.75rem 1.5rem; /* Espaçamento interno */
-    background-color: #6729FF; /* Cor de fundo roxa */
-    color: #ffffff; /* Cor do texto branca */
-    border-radius: 8px; /* Bordas arredondadas */
-    font-family: 'Poppins', sans-serif; /* Fonte utilizada */
-    font-weight: bold; /* Fonte em negrito */
-    text-decoration: none; /* Remove sublinhado */
-    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
-}
-
-.btn-more-info:hover {
-    background-color: #5600c9; /* Cor de fundo mais escura ao passar o mouse */
-}
-
-/* Título "CARTÕES" acima da descrição */
-.purple-title {
-    font-family: 'Poppins', sans-serif; /* Fonte utilizada */
-    font-size: 16px; /* Tamanho da fonte */
-    font-weight: 600; /* Peso da fonte */
-    color: #6729FF; /* Cor do texto roxa */
-    margin-bottom: 0.5rem; /* Espaçamento abaixo do título */
-    text-transform: uppercase; /* Transforma o texto para maiúsculas */
-}
-
-/* Link de texto "Veja mais informações" */
-.text-link {
-    display: flex; /* Exibição flexível */
-    align-items: center; /* Alinha verticalmente o texto e o ícone */
-    gap: 0.5rem; /* Espaçamento entre o texto e a seta */
-    color: #6729FF; /* Cor do texto roxa */
-    font-family: 'Poppins', sans-serif; /* Fonte utilizada */
-    font-size: 16px; /* Tamanho da fonte */
-    font-weight: 600; /* Fonte em negrito */
-    cursor: pointer; /* Indica que o item é clicável */
-    text-decoration: none; /* Remove sublinhado */
-    transition: color 0.3s; /* Transição suave para a cor */
-}
-
-.text-link:hover {
-    color: #5600c9; /* Cor do texto ao passar o mouse */
-}
-
-/* Ícone da seta */
-.arrow-icon {
-    width: 16px; /* Tamanho da seta */
-    height: auto; /* Altura automática */
-}
-
-/* Ajuste na grade de benefícios */
-.benefits-grid .benefit-card:nth-child(1),
-.benefits-grid .benefit-card:nth-child(2) {
-    grid-column: span 1; /* Cada um ocupa uma coluna */
-}
-
-.benefits-grid .benefit-card:nth-child(3),
-.benefits-grid .benefit-card:nth-child(4) {
-    grid-column: span 1; /* Cada um ocupa uma coluna */
-}
-
-/* Estilo do Cabeçalho do Cartão */
-.card-header {
-    display: flex; /* Exibe os itens com layout flexível */
-    align-items: center; /* Alinha o ícone e o título verticalmente */
-    gap: 0.8rem; /* Espaçamento entre o ícone e o título */
-    margin-bottom: 1rem; /* Espaçamento abaixo do cabeçalho */
-}
-
-/* Ícone nos cartões */
-.card-icon {
-    width: 32px; /* Largura do ícone */
-    height: 32px; /* Altura do ícone */
-    flex-shrink: 0; /* Impede que o ícone encolha */
-}
-
-/* Estilo dos Retângulos no Cartão */
-.benefit-card .retangulos {
-    display: flex; /* Exibe os retângulos com layout flexível */
-    justify-content: center; /* Centraliza os retângulos */
-    align-items: center; /* Alinha os retângulos verticalmente */
-    gap: 8px; /* Espaçamento entre os retângulos */
-    margin-top: 1rem; /* Espaçamento acima dos retângulos */
-}
-
-/* Estilo de cada retângulo */
-.benefit-card .retangulo {
-    width: 100px; /* Largura do retângulo */
-    height: auto; /* Altura automática */
-}
-
-/* Estilo personalizado para o cartão de Carteira Digital */
-.benefits-grid .wallet-card {
-    grid-column: span 2; /* Ocupa duas colunas horizontalmente */
-    background-color: #F3F2FF; /* Cor de fundo específica */
-    text-align: left; /* Alinha o texto à esquerda */
-}
-
-/* Ajuste no título do cartão de carteira digital */
-.benefits-grid .wallet-card h3 {
-    color: #6729FF; /* Cor do título */
-    font-size: 24px; /* Tamanho maior do título */
-    margin-bottom: 0.5rem; /* Espaçamento abaixo do título */
-}
-
-/* Ajuste no texto do cartão de carteira digital */
-.benefits-grid .wallet-card p {
-    color: #475569; /* Cor do texto */
-    font-size: 16px; /* Tamanho da fonte */
-    line-height: 1.5; /* Altura da linha */
-}
-
-/* Estilo da seção com imagem e informações do app */
-.image-section {
-    display: flex; /* Layout flexível */
-    justify-content: space-between; /* Espaçamento entre imagem e texto */
-    align-items: center; /* Alinha verticalmente */
-    padding: 2rem; /* Espaçamento interno */
-    background-color: #F9FAFB; /* Cor de fundo clara */
-    gap: 2rem; /* Espaçamento entre os elementos */
+/* estilo das imagens retangulares */
+.rectangle-white img, .rectangle-purple img {
+    width: 80px; 
+    height: auto;
 }
 
 
 
-/* Seção de app */
-.app-section {
-    background-color: #ffffff; /* Cor de fundo clara */
-    padding-top: 6rem; /* Aumentado para criar mais espaçamento superior */
-    padding-bottom: 2rem; /* Espaçamento inferior */
+/* seção de app */
+.application {
+    background-color: #ffffff; 
+    padding-top: 25rem; 
+    padding-bottom: 2rem; 
 }
 
 
-/* Contêiner do app */
-.app-container {
-    display: flex; /* Layout flexível */
-    justify-content: space-between; /* Espaçamento entre imagem e texto */
-    align-items: flex-start; /* Alinha verticalmente ao topo */
-    gap: 2rem; /* Espaçamento entre a imagem e o texto */
-    padding: 0 2rem; /* Espaçamento interno */
+/* contêiner do app */
+.application-container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    gap: 2rem; 
+    padding: 0 2rem; 
 }
 
-/* Estilo da imagem */
-.left-image {
-    width: 380px; /* Define a largura fixa */
-    height: 609px; /* Define a altura fixa */
-    object-fit: cover; /* Ajusta a imagem sem distorção */
-    border-radius: 8px; /* Bordas arredondadas */
-    margin-left: 2rem; /* Adiciona margem à esquerda para afastar da borda */
+/* estilo da imagem da mobile.png */
+.application-left-image {
+    width: 380px; 
+    height: 609px; 
+    object-fit: cover; 
+    border-radius: 8px; 
+    margin-left: 7rem; 
 }
 
-/* Estilo da seção de informações do app */
-.app-info {
-    flex: 1; /* Ocupa o espaço restante */
-    text-align: left; /* Alinha o texto à esquerda */
-    max-width: 40%; /* Reduz a largura para acomodar mais espaço */
-    margin-left: auto; /* Empurra a seção para o lado direito */
-    padding-right: 2rem; /* Adiciona espaçamento à direita */
+/* estilo da seção de informações do app */
+.application-info {
+    flex: 1; 
+    text-align: left; 
+    max-width: 40%;
+    margin-left: auto; 
+    padding-right: 2rem;
 }
 
-/* Título do app */
-.app-title {
-    font-family: 'Poppins', sans-serif; /* Fonte utilizada */
-    font-size: 16px; /* Tamanho do título */
-    font-weight: 600; /* Peso da fonte */
-    color: #6729FF; /* Cor do título */
-    text-transform: uppercase; /* Texto em maiúsculas */
-    margin-bottom: 0.5rem; /* Espaçamento abaixo do título */
+/* título do app */
+.application-title {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 16px; 
+    font-weight: 600; 
+    color: #6729FF; 
+    text-transform: uppercase; 
+    margin-bottom: 0.5rem; 
 }
 
-/* Subtítulo do app */
-.app-subtitle {
-    font-family: 'Outfit', sans-serif; /* Fonte utilizada */
-    font-size: 32px; /* Tamanho da fonte */
-    color: #475569; /* Cor do texto */
-    margin-bottom: 1rem; /* Espaçamento abaixo do subtítulo */
-    line-height: 1.2; /* Altura da linha */
+/* subtítulo do app */
+.application-subtitle {
+    font-family: 'Outfit', sans-serif; 
+    font-size: 32px; 
+    color: #475569; 
+    margin-bottom: 1rem; 
+    line-height: 1.2; 
 }
 
-/* Descrição do app */
-.app-description {
-    font-family: 'Poppins', sans-serif; /* Fonte utilizada */
-    font-size: 16px; /* Tamanho da fonte */
-    color: #64748B; /* Cor do texto */
-    margin-bottom: 1.5rem; /* Espaçamento abaixo do texto */
-    line-height: 1.5; /* Altura da linha */
+/* descrição do app */
+.application-description {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 16px; 
+    color: #64748B; 
+    margin-bottom: 1.5rem; 
+    line-height: 1.5; 
 }
 
 
-/* Estilo das informações adicionais abaixo da descrição */
-.app-features {
-    margin-top: 1rem; /* Espaçamento acima da seção */
-    display: flex; /* Layout flexível */
-    flex-direction: column; /* Organiza os itens verticalmente */
-    gap: 0.75rem; /* Espaçamento entre os itens */
+/* estilo das informações abaixo da descrição */
+.application-option {
+    margin-top: 1rem; 
+    display: flex;
+    flex-direction: column; 
+    gap: 0.75rem; 
 }
 
-/* Estilo de cada opção */
-.feature {
-    display: flex; /* Layout flexível para alinhar ícone e texto */
-    align-items: center; /* Alinha verticalmente os itens */
-    gap: 0.75rem; /* Espaçamento entre o ícone e o texto */
+/* estilo de cada opçãod da seção de app */
+.ops {
+    display: flex; 
+    align-items: center; 
+    gap: 0.75rem; 
 }
 
-/* Estilo do ícone */
-.feature-icon {
-    width: 32px; /* Largura do ícone */
-    height: 32px; /* Altura do ícone */
-    object-fit: contain; /* Ajusta o tamanho sem distorcer */
+/* estilo do ícone das opções da seção de app */
+.application-icon {
+    width: 32px;
+    height: 32px; 
+    object-fit: contain; 
 }
 
-/* Estilo do texto */
-.feature-text {
-    display: flex; /* Layout flexível */
-    flex-direction: column; /* Organiza título e descrição verticalmente */
+/* estilo do texto da seção de app */
+.application-text {
+    display: flex; 
+    flex-direction: column; 
 }
 
-/* Título das opções */
-.feature-title {
+/* título das opções */
+.application-title {
     font-family: 'Outfit', sans-serif;
     font-size: 16px;
     font-weight: 600;
     color: #6729FF;
-    margin-bottom: 0.2rem; /* Reduz o espaço abaixo do título */
+    margin-bottom: 0.2rem; 
 }
 
-/* Descrição das opções */
-.feature-description {
+/* descrição das opções */
+.application-description {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     font-weight: 400;
     color: #64748B;
-    margin-top: 0; /* Remove o espaço extra acima da descrição */
+    margin-top: 0; 
 }
 
 
-/* Contêiner do ícone com fundo roxo */
-.feature-icon-container {
-    width: 48px; /* Largura do quadrado */
-    height: 48px; /* Altura do quadrado */
-    background-color: #6729FF; /* Cor de fundo roxa */
-    border-radius: 8px; /* Bordas arredondadas */
-    display: flex; /* Layout flexível */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
+/* contêiner do ícone com fundo roxo */
+.application-icon-container {
+    width: 48px; 
+    height: 48px; 
+    background-color: #6729FF; 
+    border-radius: 8px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
 }
 
-/* Estilo do ícone */
-.feature-icon {
-    width: 24px; /* Largura do ícone */
-    height: 24px; /* Altura do ícone */
-    object-fit: contain; /* Ajusta o tamanho sem distorcer */
+/* estilo do ícone */
+.application-icon {
+    width: 24px; 
+    height: 24px; 
+    object-fit: contain;
 }
 
-
-/* Seção do Aplicativo Mobile */
-.mobile-app {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #6729FF;
-    padding: 3rem 1.5rem;
-    color: white;
-    
-    margin: 3rem auto;
-    max-width: 1200px;
+/* estilo da imagem da seção aplciativo */
+.application-left-image {
+    width: 380px;
+    height: 609px; 
+    object-fit: cover; 
+    border-radius: 8px; 
+    margin-left: 7rem; 
+    position: relative; 
+    z-index: 1; 
 }
 
-.mobile-app .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.mobile-app .app-text {
-    flex: 1;
-    margin-right: 2rem;
-}
-
-.mobile-app h3 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    margin-bottom: 0.5rem;
-    color: white
-}
-
-.mobile-app h2 {
-    font-family: 'Outfit', sans-serif;
-    font-weight: 600;
-    font-size: 2rem;
-    line-height: 1.4;
-    margin-bottom: 1rem;
-    white-space: normal;
-    word-break: break-word; /* Para forçar quebras em telas menores */
-    color: white;
-}
-
-
-.mobile-app p {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.6;
-    margin-bottom: 2rem;
-    color: white;
-}
-
-.mobile-app .app-buttons {
-    display: flex;
-    gap: 1rem;
-}
-
-.mobile-app .btn-store {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    padding: 0.8rem 1.5rem;
-    background-color: white;
-    color: #6729FF;
-    border-radius: 8px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 1rem;
-    text-decoration: none;
-    transition: background-color 0.3s;
-}
-
-.mobile-app .btn-store img {
-    width: 20px;
-    height: auto;
-}
-
-.mobile-app .btn-store:hover {
-    background-color: #e0d4ff;
-}
-
-/* Ajuste das imagens do aplicativo */
-.mobile-app .app-images {
-    position: relative;
-    flex: 1;
-    display: flex;
-    justify-content: flex-start; /* Alinha o conteúdo à esquerda */
-    align-items: center;
-    gap: 0; /* Remove o espaçamento entre as imagens */
-}
-
-.mobile-app .app-image-main {
-    position: absolute; /* Torna o posicionamento independente */
-    z-index: 2; /* Garante que a primeira imagem fique sobre a segunda */
-    width: 300px;
-    left: -20px; /* Ajuste do deslocamento para a esquerda */
-    top: -165px; /* Ajuste do deslocamento da imagem para baixo */
-}
-
-.mobile-app .app-image-secondary {
-    position: absolute; /* Torna o posicionamento independente */
-    z-index: 1; /* Garante que a segunda imagem fique atrás da primeira */
-    width: 300px; /* Tamanho da segunda imagem */
-    left: 130px; /* Ajuste para esconder a imagem à esquerda */
-    top: -110px; /* Alinha verticalmente com a primeira imagem */
-}
-
-.mobile-app .app-image-main img,
-.mobile-app .app-image-secondary img {
-    width: 100%;
-}
-
-
-/* Remove qualquer espaço entre as seções */
-body, html {
-    margin: 0;
-    padding: 0;
-}
-
-/* Seção do Banner */
-.banner-section {
-    position: relative;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}
-
-.banner-section .banner-image {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.banner-section .banner-content {
+/* estilo do fundo cinza atrás da imagem */
+.gray-background-image {
+    background-color: #f3f4f6; 
+    width: 550px; 
+    height: 350px; 
     position: absolute;
-    top: 45%; /* Ajustado para mover o conteúdo mais para cima */
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-    z-index: 2;
+    top: 260px; 
+    left: 30px; 
+    border-radius: 8px; 
 }
 
-.banner-section .banner-title {
+
+/* coloca a posição da imagem sobre o fundo cinza */
+.gray-background {
+    position: relative; 
+}
+
+/* estilos do banner final */
+
+.banner-image {
+    width: 100%; 
+    position: relative; 
+    overflow: hidden; 
+}
+
+.banner-img {
+    width: 100%;
+    height: auto; 
+    display: block; 
+}
+
+.banner-section {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: center; 
+}
+
+.banner-section h2 {
     font-family: 'Outfit', sans-serif;
-    font-weight: 600;
-    font-size: 70px;
-    line-height: 1.4;
-    margin-bottom: 1rem;
+    color: #ffffff; 
+    font-size: 70px; 
+    font-weight: bold;
+    line-height: 1.5; 
+    margin-bottom: 8px; 
 }
-
-.banner-section .btn-create-account {
-    padding: 0.6rem 1.5rem;  /* Reduzindo o padding para diminuir o tamanho do botão */
-    background-color: #6729FF;
-    color: white;
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 0.9rem;  /* Opcional: reduzindo o tamanho da fonte */
-    border-radius: 8px;
+.btn-banner {
+    display: inline-block; 
+    width: 150px; 
+    height: 36px; 
+    background-color: #6729FF; 
+    color: #ffffff; 
+    font-family: 'Poppins', sans-serif; 
+    font-size: 13px; 
+    font-weight: 600; 
+    text-align: center;
+    line-height: 36px; 
+    border: none; 
+    border-radius: 8px; 
+    text-decoration: none; 
+    margin-top: 12px;
+    cursor: pointer;
     transition: background-color 0.3s;
+    margin-top: 0; 
 }
 
-.banner-section .btn-create-account:hover {
-    background-color: #5a21c1;
+.btn-banner:hover {
+    background-color: #4f20c3; 
 }
 
-
-
-
-.mobile-app {
-    margin-bottom: 0; 
-}
-
+/* estilos do footer */
 footer {
     background-color: #f9f9f9;
     color: #333;
@@ -824,9 +766,12 @@ footer {
     font-size: 14px;
 }
 
+/* hover sobre os itens do footer*/
 .footer-section ul li a:hover {
     color: #7d4cc1;
 }
+
+/* estilos da seção de newsletter do footer */
 
 .footer-section.newsletter form {
     display: flex;
@@ -841,10 +786,12 @@ footer {
     border-radius: 4px;
     margin-right: 8px;
     font-size: 14px;
-    font-family: 'Poppins', sans-serif; /* Define a fonte como Poppins */
-    color: #94A3B8; /* Define a cor do texto */
+    font-family: 'Poppins', sans-serif; 
+    color: #94A3B8; 
     
 }
+
+/* botão da seção newsletter */
 
 .footer-section.newsletter button {
     background-color: #6729FF;
@@ -859,6 +806,7 @@ footer {
 .footer-section.newsletter button:hover {
     background-color: #693a9c;
 }
+/* estilos das figuras das redes sociais */
 
 .social-media a {
     display: inline-block;
@@ -878,8 +826,8 @@ footer {
     padding-top: 20px;
     border-top: 1px solid #ddd;
     font-size: 14px;
-    font-family: 'Poppins', sans-serif; /* Define a fonte como Poppins */
-    color: #94A3B8; /* Define a cor do texto */
+    font-family: 'Poppins', sans-serif; 
+    color: #94A3B8; 
 }
 
 .footer-bottom ul {
@@ -894,8 +842,8 @@ footer {
 
 .footer-bottom ul li a {
     text-decoration: none;
-    color: #94A3B8; /* Define a cor do texto */
-    font-family: 'Poppins', sans-serif; /* Define a fonte como Poppins */
+    color: #94A3B8; 
+    font-family: 'Poppins', sans-serif; 
 }
 
 .footer-bottom ul li a:hover {
@@ -907,32 +855,32 @@ footer {
 }
 
 .footer-section.newsletter .social-media {
-    margin-top: 20px; /* Adicionado para afastar as imagens do campo de e-mail */
+    margin-top: 20px; 
 }
 
 .footer-section h4 {
-    font-family: 'Outfit', sans-serif; /* Define a fonte como Outfit */
-    color: #64748B; /* Define a cor do texto */
-    font-weight: 600; /* Mantém o peso do texto */
+    font-family: 'Outfit', sans-serif; 
+    color: #64748B; 
+    font-weight: 600; 
     margin-bottom: 10px;
 }
 
 .footer-section ul li a {
-    font-family: 'Poppins', sans-serif; /* Define a fonte como Poppins */
-    color: #94A3B8; /* Define a cor do texto */
-    text-decoration: none; /* Remove o sublinhado dos links */
-    font-weight: 400; /* Define o peso do texto como regular */
+    font-family: 'Poppins', sans-serif; 
+    color: #94A3B8;
+    text-decoration: none; 
+    font-weight: 400; 
 }
 
 .footer-section ul li a:hover {
-    color: #64748B; /* Cor ao passar o mouse (opcional) */
+    color: #64748B; 
 }
 
 .footer-section.newsletter p {
-    font-family: 'Poppins', sans-serif; /* Define a fonte como Poppins */
-    color: #94A3B8; /* Define a cor do texto */
-    font-size: 14px; /* Tamanho da fonte opcional */
-    margin-bottom: 10px; /* Espaçamento opcional */
+    font-family: 'Poppins', sans-serif; 
+    color: #94A3B8; 
+    font-size: 14px; 
+    margin-bottom: 10px; 
 }
 
 .footer-bottom h3.footer-title {
@@ -942,47 +890,151 @@ footer {
     margin: 10px 0;
 }
 
-
-.contact-section {
-    background-color: #6729FF; /* Cor de fundo roxa */
-    color: #ffffff; /* Cor do texto: Branco */
-    padding: 5rem 2rem; /* Aumenta o espaço interno vertical (cima e baixo) */
-    text-align: left; /* Alinha o texto à esquerda */
+/* estilos da seção da loja de aplicativos */
+.availability {
+    background-color: #6729FF; 
+    width: 100%; 
+    height: 534px; 
+    display: flex; 
+    justify-content: flex-start; 
+    align-items: center; 
+    padding-left: 4rem; 
+    margin-top: 8rem; 
+    overflow: hidden; 
 }
 
-.contact-section .container {
-    max-width: 1200px; /* Limita a largura máxima */
-    margin: 0 auto; /* Centraliza horizontalmente */
-    padding-left: 112px; /* Espaçamento à esquerda */
-    padding-top: 2rem; /* Adiciona espaço acima do conteúdo */
+
+/* estilo do conteúdo da seção da loja de aplicativos */
+.availability-section {
+    max-width: 600px; 
+    margin-top: -2rem; 
 }
 
-.contact-section h1,
-.contact-section p {
-    text-align: left; /* Alinha o texto à esquerda */
+/* título da seção */
+.availability-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600; 
+    color: #FFFFFF; 
+    margin-bottom: 1rem; 
 }
 
-.contact-section h1 {
+/* subtítulo da seção */
+.availability-subtitle {
+    font-family: 'Outfit', sans-serif; 
+    font-size: 40px; 
+    font-weight: 600; 
+    color: #F8FAFC; 
+    margin-bottom: 1.5rem; 
+    line-height: 1.2; 
+}
+
+/* descrição da seção */
+.availability-description {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 16px; 
+    font-weight: 400; 
+    color: #E2E8F0; 
+    line-height: 1.5; 
+}
+
+
+/* estilo dos botões das lojas de aplciativos */
+.availability-buttons {
+    display: flex; 
+    gap: 1rem; 
+    margin-top: 2rem; 
+}
+
+.availability-buttons a {
+    display: flex; 
+    align-items: center; 
+    background-color: #F3F2FF; 
+    padding: 10px 20px; 
+    border-radius: 8px; 
+    color: #6729FF; 
+    font-family: 'Poppins', sans-serif; 
+    font-size: 16px; 
+    font-weight: 600; 
+    text-decoration: none; 
+}
+
+.availability-buttons .availability-icon {
+    margin-right: 10px; 
+    width: 20px; 
+    height: auto; 
+}
+
+
+/* estilo da container das imagens app1 e app2*/
+.availability-image-container {
+    position: relative; 
+    margin-top: 6rem;
+}
+
+/* estilo da imagem principal (app1) */
+.availability-image {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    z-index: 2; 
+    position: relative; 
+}
+
+/* estilo da segunda imagem (app2) */
+.availability-image-2 {
+    position: absolute; 
+    right: -200px; 
+    bottom: 0; 
+    width: 390px; 
+    height: 390px; 
+    object-fit: cover; 
+    z-index: 1; 
+}
+
+/* estilos da página contato.html */
+
+/* estilo do banner roxo inicial*/
+.conect-section {
+    background-color: #6729FF;
+    color: #ffffff; 
+    padding: 5rem 2rem; 
+    text-align: left; 
+}
+
+.conect-section .conect-container {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding-left: 112px; 
+    padding-top: 2rem;
+}
+
+.conect-section h1,
+.conect-section p {
+    text-align: left; 
+}
+
+.conect-section h1 {
     font-family: 'Outfit', sans-serif;
-    font-size: 50px; /* Tamanho da fonte */
-    font-weight: bold; /* Peso da fonte */
-    margin-bottom: 1rem; /* Espaçamento inferior */
+    font-size: 50px; 
+    font-weight: bold; 
+    margin-bottom: 1rem; 
 }
 
-.contact-section p {
-    font-family: 'Poppins', sans-serif; /* Fonte: 'Poppins', sans-serif */
-    font-size: 16px; /* Tamanho da fonte */
-    font-weight: normal; /* Peso normal */
-    margin: 0; /* Remove espaçamento padrão */
-    color: white; /* Cor do texto padrão */
+.conect-section p {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 16px; 
+    font-weight: normal;
+    margin: 0; 
+    color: white; 
 }
 
-/* Cor específica para a descrição inicial */
+
 .contact-details p {
-    color: #ffffff; /* Cor branca para o texto "Estamos aqui para ouvir você..." */
+    color: #ffffff; 
 }
 
-/* Estilo básico para as seções de contato */
+/* estilo para as seções de contato */
 .contact-details {
     padding: 40px 0;
 }
@@ -992,7 +1044,7 @@ footer {
     font-weight: 600;
     font-size: 24px;
     text-align: left;
-    margin-bottom: 4px; /* Reduz o espaçamento inferior do título */
+    margin-bottom: 4px; 
     color: #475569;
 }
 
@@ -1001,28 +1053,33 @@ footer {
     font-weight: 400;
     font-size: 14px;
     text-align: left;
-    margin-top: 0; /* Remove o espaçamento superior do parágrafo */
+    margin-top: 0; 
     color: #64748B;
 }
 
-/* Flexbox para organizar os itens de contato */
 .contact-item {
-    display: flex; /* Utiliza flexbox */
-    justify-content: space-between; /* Espaça os elementos */
-    align-items: center; /* Alinha verticalmente os itens */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 64px;
 }
+
+.contact-item:not(:last-child) {
+    border-bottom: 1px solid #E5E7EB;
+    padding-bottom: 20px; 
+}
+
 
 .contact-content {
     display: flex;
     align-items: center;
     gap: 16px;
-    flex: 1; /* Flexibilidade para o conteúdo ocupar o espaço disponível */
+    flex: 1; 
 }
 
 .contact-info {
     flex: 1;
-    text-align: right; /* Alinha o texto à direita */
+    text-align: right; 
     padding-left: 400px;
 }
 
@@ -1030,7 +1087,7 @@ footer {
     display: flex;
     gap: 16px;
     margin-top: 12px;
-    justify-content: flex-end; /* Alinha os ícones das redes sociais à direita */
+    justify-content: flex-end; 
     padding-right: 100px;
 }
 
@@ -1045,7 +1102,7 @@ footer {
     transform: scale(1.1);
 }
 
-/* Estilo básico para o layout do container */
+/* estilo do container */
 .container {
     width: 100%;
     max-width: 1200px;
@@ -1054,9 +1111,9 @@ footer {
 }
 
 .contact-icon {
-    width: 20px; /* Largura do ícone */
-    height: 20px; /* Altura do ícone */
-    transform: translateY(-2px); /* Move o ícone levemente para cima */
+    width: 20px; 
+    height: 20px; 
+    transform: translateY(-2px); 
 }
 
 
@@ -1064,14 +1121,15 @@ footer {
     white-space: nowrap; /* Impede quebra de linha */
 }
 
+/* estilos do formulário */
 .contact-form {
-    flex: 1; /* Permite que o formulário ocupe o espaço disponível */
-    padding-left: 40px; /* Espaçamento à esquerda */
+    flex: 1; 
+    padding-left: 40px;
     padding-top: 20px;
-    max-width: 500px; /* Limita a largura máxima do formulário */
+    max-width: 500px; 
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Alinha o conteúdo do formulário no início */
+    justify-content: flex-start; 
 }
 
 
@@ -1080,28 +1138,30 @@ footer {
     flex-direction: column;
 }
 
-.form-row {
-    margin-bottom: 20px; /* Espaçamento entre os campos do formulário */
+/* espaçamento entre os campos do formulário */
+.form-itens {
+    margin-bottom: 20px; 
 }
 
-.form-row-inline {
-    display: flex; /* Usado para exibir os campos na mesma linha */
-    justify-content: space-between; /* Distribui os campos igualmente */
+.form-itens-inline {
+    display: flex; 
+    justify-content: space-between; 
+}
+/* Cada campo ocupa uma quantidade igual de espaço e tem seu espaçamento*/
+.form-item {
+    flex: 1; 
+    margin-right: 10px; 
 }
 
-.inline-field {
-    flex: 1; /* Cada campo ocupa uma quantidade igual de espaço */
-    margin-right: 10px; /* Espaçamento entre os campos */
-}
 
-.form-row label {
+.form-itens label {
     font-family: 'Outfit', sans-serif;
     font-size: 16px;
     font-weight: 600;
     color: #475569;
 }
 
-.form-row input, .form-row textarea {
+.form-itens input, .form-itens textarea {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
@@ -1113,21 +1173,23 @@ footer {
     transition: border-color 0.3s;
 }
 
-.form-row input:focus, .form-row textarea:focus {
-    border-color: #6729FF; /* Cor de borda quando focado */
+.form-itens input:focus, .form-itens textarea:focus {
+    border-color: #6729FF; 
 }
 
+/* estilos para a área de mensagem*/
 textarea {
-    height: 150px; /* Define a altura da caixa de mensagem */
-    resize: vertical; /* Permite redimensionamento vertical */
+    height: 150px; 
+    resize: vertical; 
 }
 
-.btn-submit {
-    width: 215px; /* Define a largura do botão */
-    height: 40px; /* Define a altura do botão */
+/* estilos botão de enviar mensagem */
+.btn-end {
+    width: 215px;
+    height: 40px; 
     background-color: #6729FF;
     color: #ffffff;
-    padding: 0; /* Remove o preenchimento para controlar o tamanho com largura e altura */
+    padding: 0; 
     border: none;
     border-radius: 8px;
     font-size: 16px;
@@ -1136,38 +1198,39 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8px; /* Espaçamento entre o texto e a seta */
+    gap: 8px; 
     transition: background-color 0.3s;
-    margin-left: auto; /* Alinha o botão à direita */
+    margin-left: auto; 
 }
 
 .arrow-icon {
-    width: 18px; /* Ajusta a largura da seta */
-    height: 18px; /* Ajusta a altura da seta */
+    width: 18px; 
+    height: 18px; 
 }
 
-.btn-submit:hover {
+.btn-end:hover {
     background-color: #4f20c3;
 }
 
 
-.form-row-inline {
-    display: flex; /* Usado para exibir os campos na mesma linha */
-    justify-content: space-between; /* Distribui os campos igualmente */
+.form-itens-inline {
+    display: flex; 
+    justify-content: space-between; 
 }
 
-.inline-field {
-    flex: 1; /* Cada campo ocupa uma quantidade igual de espaço */
-    margin-right: 40px; /* Espaçamento entre os campos */
+.form-item {
+    flex: 1; 
+    margin-right: 40px; 
 }
 
 
-.inline-field:last-child {
+.form-item:last-child {
     margin-right: 0;
 }
 
 textarea {
-    height: 200px; /* Define a altura da caixa de mensagem */
-    resize: vertical; /* Permite redimensionamento vertical */
+    height: 200px; 
+    resize: vertical; 
     
 }
+

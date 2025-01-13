@@ -9,48 +9,48 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Cabeçalho com navegação -->
+    <!-- cabeçalho com navegação e botão -->
     <header>
         <nav class="navigation">
             <div class="container">
-                <!-- Logo com link para a página inicial -->
+                <!-- logo -->
                 <a href="./index.html" class="logo">NullBank</a>
                 <ul class="navigation-links">
-                    <!-- Links de navegação -->
+                    <!-- links de navegação -->
                     <li><a href="index.html" class="start">Início</a></li>
                     <li><a href="404.html">Para você</a></li>
                     <li><a href="404.html">Serviços</a></li>
                     <li><a href="contato.html" class="active">Contato</a></li>
                 </ul>
                 <div class="buttons">
-                    <!-- Botões de Cadastro e Login -->
+                    <!-- botões de cadastro e login-->
                     <a href="404.html" class="btn-register">Cadastrar-se</a>
                     <a href="404.html" class="btn-login">Fazer login</a>
                 </div>
             </div>
         </nav>
     </header>
-    
-    <section class="contact-section">
-        <div class="container">
+    <!-- banner roxo inicial -->
+    <section class="conect-section">
+        <div class="conect-container">
             <h1>Conecte-se conosco e<br>transforme ideias em realidade.</h1>
             <p>Estamos aqui para ouvir você. Entre em contato<br>conosco e descubra novas possibilidades.</p>
         </div>
     </section>
 
-    <!-- Seção de Contato: Telefone, Redes Sociais e Fale Conosco -->
+    <!-- seção de contatos -->
     <section class="contact-details">
         <div class="container">
             <div class="contact-item">
                 <div class="contact-content">
-                    <!-- Ícone de telefone -->
+                
                     <img src="./assets/phone.png" alt="Ícone de Telefone" class="contact-icon">
                     <div>
                         <h2>Telefone</h2>
                         <p class="phone-description">Precisa falar com a gente? Ligue para os nossos números:</p>
                     </div>
                 </div>
-                <!-- Informações de telefone à direita -->
+                
                 <div class="contact-info">
                     <p><strong>9999 8888</strong> (capitais e regiões metropolitanas)</p>
                     <p><strong>0800 543 2110</strong> (demais localidades)</p>
@@ -59,34 +59,34 @@
 
             <div class="contact-item">
                 <div class="contact-content">
-                    <!-- Ícone de redes sociais -->
+                    <!-- ícone das redes sociais -->
                     <img src="./assets/redes.png" alt="Ícone de Redes Sociais" class="contact-icon">
                     <div>
                         <h2>Redes Sociais</h2>
                         <p>Conecte-se em nossas redes sociais e acompanhe as novidades:</p>
                     </div>
                 </div>
-                <!-- Ícones das redes sociais à direita -->
+               
                 <div class="social-icons">
-                    <a href="https://facebook.com" target="_blank">
+                    <a href="https://www.facebook.com" target="_blank">
                         <img src="./assets/facebook.png" alt="Facebook" class="social-icon">
                     </a>
                     <a href="https://twitter.com" target="_blank">
                         <img src="./assets/twitter.png" alt="Twitter" class="social-icon">
                     </a>
-                    <a href="https://linkedin.com" target="_blank">
+                    <a href="https://www.linkedin.com" target="_blank">
                         <img src="./assets/linkedin.png" alt="LinkedIn" class="social-icon">
                     </a>
-                    <a href="https://instagram.com" target="_blank">
+                    <a href="https://www.instagram.com" target="_blank">
                         <img src="./assets/instagram.png" alt="Instagram" class="social-icon">
                     </a>
                 </div>
             </div>
 
-            <!-- Fale Conosco e Formulário -->
+            <!-- seção fale conosco -->
             <div class="contact-item">
                 <div class="contact-content">
-                    <!-- Ícone de Fale Conosco -->
+                    
                     <img src="./assets/message-circle.png" alt="Ícone de Fale Conosco" class="contact-icon">
                     <div>
                         <h2>Fale conosco</h2>
@@ -94,28 +94,28 @@
                     </div>
                 </div>
 
-                <!-- Formulário -->
+                <!-- formulário -->
                 <div class="contact-form">
-                    <form action="#" method="post">
-                        <div class="form-row form-row-inline">
-                            <div class="inline-field">
+                    <form id="contact-form" action="#" method="post">
+                        <div class="form-itens form-itens-inline">
+                            <div class="form-item">
                                 <label for="first-name">Nome</label>
-                                <input type="text" id="first-name" name="first-name" placeholder="Seu nome" required>
+                                <input type="text" id="first-name" name="first-name" placeholder="Seu nome">
                             </div>
-                            <div class="inline-field">
+                            <div class="form-item">
                                 <label for="last-name">Sobrenome</label>
-                                <input type="text" id="last-name" name="last-name" placeholder="Seu sobrenome" required>
+                                <input type="text" id="last-name" name="last-name" placeholder="Seu sobrenome">
                             </div>
                         </div>
-                        <div class="form-row">
+                        <div class="form-itens">
                             <label for="email">E-mail</label>
-                            <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+                            <input type="email" id="email" name="email" placeholder="Seu e-mail">
                         </div>
-                        <div class="form-row">
+                        <div class="form-itens">
                             <label for="message">Mensagem</label>
-                            <textarea id="message" name="message" placeholder="Sua mensagem" required></textarea>
+                            <textarea id="message" name="message" placeholder="Sua mensagem"></textarea>
                         </div>
-                        <button type="submit" class="btn-submit">
+                        <button type="submit" class="btn-end">
                             Enviar <img src="./assets/arrow2.png" alt="Seta" class="arrow-icon">
                         </button>
                     </form>
@@ -123,5 +123,84 @@
             </div>
         </div>
     </section>
+
+    <!-- banner final -->
+    <section class="banner-image">
+        <div class="banner-section">
+            <h2>Venha ser nulo<br>você também!</h2>
+            <a href="404.html" class="btn-banner">Crie sua conta</a>
+        </div>
+        <img src="./assets/banner.png" alt="Banner Promocional" class="banner-img">
+    </section>
+    <!-- footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Para você</h4>
+                <ul>
+                    <li><a href="404.html">Contas pessoais</a></li>
+                    <li><a href="404.html">Empréstimos</a></li>
+                    <li><a href="404.html">Investimentos</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>NullBank</h4>
+                <ul>
+                    <li><a href="404.html">Sobre nós</a></li>
+                    <li><a href="404.html">Nossa missão</a></li>
+                    <li><a href="404.html">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Serviços</h4>
+                <ul>
+                    <li><a href="404.html">Conta digital</a></li>
+                    <li><a href="404.html">Pix e transferências</a></li>
+                    <li><a href="404.html">Pagamentos online</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Suporte</h4>
+                <ul>
+                    <li><a href="404.html">Central de ajuda</a></li>
+                    <li><a href="404.html">Fale conosco</a></li>
+                    <li><a href="404.html">Perguntas frequentes</a></li>
+                </ul>
+            </div>
+            <div class="footer-section newsletter">
+                <h4>Newsletter</h4>
+                <p>Receba novidades e dicas financeiras diretamente no seu email.</p>
+                <form onsubmit="return showThankYouMessage()">
+                    <input type="email" placeholder="email@exemplo.com" required>
+                    <button type="submit">➔</button>
+                </form>
+                <div class="social-media">
+                    <a href="https://www.facebook.com" target="_blank"><img src="./assets/facebook.png" alt="Facebook"></a>
+                    <a href="https://twitter.com" target="_blank"><img src="./assets/twitter.png" alt="Twitter"></a>
+                    <a href="https://www.linkedin.com" target="_blank"><img src="./assets/linkedin.png" alt="LinkedIn"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="./assets/instagram.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 NullBank. Todos os direitos reservados.</p>
+            <h3 class="footer-title">NullBank</h3>
+            <ul>
+                <li><a href="404.html">Política de Privacidade</a></li>
+                <li><a href="404.html">Termos de Uso</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+    <!-- script de quando o usuário coloca o email válido e recebe mensagem de confirmação -->
+    <script>
+        function showThankYouMessage() {
+            alert("Obrigado por fazer parte da nossa Newsletter");
+            return true;  // Permite que o formulário seja enviado
+        }
+    </script>
+
+    <!-- script de validação do formulário -->
+    <script src="./js/validateForm.js"></script>
 </body>
 </html>
