@@ -656,7 +656,7 @@ header {
 
 /* estilo do fundo cinza atrás da imagem */
 .gray-background-image {
-    background-color: #f3f4f6; 
+    background-color: #d9dfeb; 
     width: 550px; 
     height: 350px; 
     position: absolute;
@@ -1234,3 +1234,20 @@ textarea {
     
 }
 
+
+#errorMessage {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+
+
+.footer-bottom h3.footer-title a {
+    text-decoration: none; 
+    color: #6729FF; 
+}
+
+.footer-bottom h3.footer-title a:hover {
+    color: #5a1a99; 
+}

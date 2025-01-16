@@ -109,7 +109,8 @@
                         </div>
                         <div class="form-itens">
                             <label for="email">E-mail</label>
-                            <input type="email" id="email" name="email" placeholder="Seu e-mail">
+                            <input type="text" id="email" name="email" placeholder="Seu e-mail">
+
                         </div>
                         <div class="form-itens">
                             <label for="message">Mensagem</label>
@@ -132,73 +133,97 @@
         </div>
         <img src="./assets/banner.png" alt="Banner Promocional" class="banner-img">
     </section>
-    <!-- footer -->
-    <footer>
-        <div class="footer-container">
-            <div class="footer-section">
-                <h4>Para você</h4>
-                <ul>
-                    <li><a href="404.html">Contas pessoais</a></li>
-                    <li><a href="404.html">Empréstimos</a></li>
-                    <li><a href="404.html">Investimentos</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>NullBank</h4>
-                <ul>
-                    <li><a href="404.html">Sobre nós</a></li>
-                    <li><a href="404.html">Nossa missão</a></li>
-                    <li><a href="404.html">Blog</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Serviços</h4>
-                <ul>
-                    <li><a href="404.html">Conta digital</a></li>
-                    <li><a href="404.html">Pix e transferências</a></li>
-                    <li><a href="404.html">Pagamentos online</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Suporte</h4>
-                <ul>
-                    <li><a href="404.html">Central de ajuda</a></li>
-                    <li><a href="404.html">Fale conosco</a></li>
-                    <li><a href="404.html">Perguntas frequentes</a></li>
-                </ul>
-            </div>
-            <div class="footer-section newsletter">
-                <h4>Newsletter</h4>
-                <p>Receba novidades e dicas financeiras diretamente no seu email.</p>
-                <form onsubmit="return showThankYouMessage()">
-                    <input type="email" placeholder="email@exemplo.com" required>
-                    <button type="submit">➔</button>
-                </form>
-                <div class="social-media">
-                    <a href="https://www.facebook.com" target="_blank"><img src="./assets/facebook.png" alt="Facebook"></a>
-                    <a href="https://twitter.com" target="_blank"><img src="./assets/twitter.png" alt="Twitter"></a>
-                    <a href="https://www.linkedin.com" target="_blank"><img src="./assets/linkedin.png" alt="LinkedIn"></a>
-                    <a href="https://www.instagram.com" target="_blank"><img src="./assets/instagram.png" alt="Instagram"></a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>© 2025 NullBank. Todos os direitos reservados.</p>
-            <h3 class="footer-title">NullBank</h3>
+   <!-- footer -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h4>Para você</h4>
             <ul>
-                <li><a href="404.html">Política de Privacidade</a></li>
-                <li><a href="404.html">Termos de Uso</a></li>
+                <li><a href="404.html">Contas pessoais</a></li>
+                <li><a href="404.html">Empréstimos</a></li>
+                <li><a href="404.html">Investimentos</a></li>
             </ul>
         </div>
+        <div class="footer-section">
+            <h4>NullBank</h4>
+            <ul>
+                <li><a href="404.html">Sobre nós</a></li>
+                <li><a href="404.html">Nossa missão</a></li>
+                <li><a href="404.html">Blog</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Serviços</h4>
+            <ul>
+                <li><a href="404.html">Conta digital</a></li>
+                <li><a href="404.html">Pix e transferências</a></li>
+                <li><a href="404.html">Pagamentos online</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Suporte</h4>
+            <ul>
+                <li><a href="404.html">Central de ajuda</a></li>
+                <li><a href="404.html">Fale conosco</a></li>
+                <li><a href="404.html">Perguntas frequentes</a></li>
+            </ul>
+        </div>
+        <div class="footer-section newsletter">
+            <h4>Newsletter</h4>
+            <p>Receba novidades e dicas financeiras diretamente no seu email.</p>
+            <form id="newsletterForm">
+                <input type="text" id="emailInput" placeholder="email@exemplo.com">
+                <button type="submit">➔</button>
+            </form>
+            <div id="errorMessage" style="color: red; font-size: 12px; display: none;">Por favor, insira um e-mail válido.</div>
+            
+            <div id="thankYouMessage" style="color: #6729FF; font-size: 14px; display: none;">Obrigado por fazer parte da nossa Newsletter!</div>
+            <div class="social-media">
+                <a href="https://www.facebook.com" target="_blank"><img src="./assets/facebook.png" alt="Facebook"></a>
+                <a href="https://twitter.com" target="_blank"><img src="./assets/twitter.png" alt="Twitter"></a>
+                <a href="https://www.linkedin.com" target="_blank"><img src="./assets/linkedin.png" alt="LinkedIn"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="./assets/instagram.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2025 NullBank. Todos os direitos reservados.</p>
+        <h3 class="footer-title">
+           
+            <a href="index.html" style="color: #6729FF;">NullBank</a>
+        </h3>
+        <ul>
+            <li><a href="404.html">Política de Privacidade</a></li>
+            <li><a href="404.html">Termos de Uso</a></li>
+        </ul>
+    </div>
     </footer>
-    
-    <!-- script de quando o usuário coloca o email válido e recebe mensagem de confirmação -->
-    <script>
-        function showThankYouMessage() {
-            alert("Obrigado por fazer parte da nossa Newsletter");
-            return true;  // Permite que o formulário seja enviado
+
+<!-- script para validação do e-mail -->
+<script>
+    document.getElementById('newsletterForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const emailInput = document.getElementById('emailInput');
+        const errorMessage = document.getElementById('errorMessage');
+        const thankYouMessage = document.getElementById('thankYouMessage');
+        const email = emailInput.value;
+
+      
+        const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+        
+        if (emailRegex.test(email)) {
+           
+            thankYouMessage.style.display = "block";
+            errorMessage.style.display = "none"; 
+        } else {
+          
+            errorMessage.style.display = "block";
+            thankYouMessage.style.display = "none"; 
         }
-    </script>
+    });
+</script>
+
 
     <!-- script de validação do formulário -->
     <script src="./js/validateForm.js"></script>
